@@ -16,6 +16,7 @@ export const speakers: Speaker[] = [
     id: 'annuska',
     name: 'Annuska Dal Maso',
     topic: 'Haittojen vähentäminen',
+    image: '/speakers/annuska.webp',
     description:
       'Annuska on haittojen vähentämisen ja huumepolitiikan uudistamisen puolestapuhuja. Hän käy rohkeaa ja tärkeää keskustelua päihdepolitiikasta ja huumeiden aiheuttamien haittojen ehkäisemisestä Suomessa.',
   },
@@ -24,6 +25,7 @@ export const speakers: Speaker[] = [
     name: 'Heidi & Sarina',
     handle: '@siskostentarina',
     topic: 'Kasvaminen päihteiden varjossa',
+    image: '/speakers/heidi-sarina.webp',
     description:
       'Heidi ja Sarina ovat sisaruksia, jotka kasvoivat päihderiippuvaisen vanhemman kanssa. He jakavat tarinansa siitä, kuinka haastavista lapsuuden kokemuksista voi rakentaa täyttä elämää.',
   },
@@ -38,6 +40,7 @@ export const speakers: Speaker[] = [
     id: 'tuomo',
     name: 'Tuomo Kasanen "Veli Koo"',
     topic: 'Suomalainen miehuus & muutos',
+    image: '/speakers/tuomo.webp',
     description:
       'Tuomo Kasanen, tunnettu nimellä Veli Koo, on suomalaisen miehuuden äänitorvi. Hän osoittaa omalla esimerkillään, kuinka haastavasta lähtökohdasta voi muuttua toisten inspiraatioksi.',
   },
@@ -45,6 +48,7 @@ export const speakers: Speaker[] = [
     id: 'anna',
     name: 'Anna Lindfors',
     topic: 'Aito yhteys toisiin ihmisiin',
+    image: '/speakers/anna.webp',
     description:
       'Anna Lindfors on kansainvälinen psykologi ja seksuologi, joka tutkii ihmisten välistä yhteyttä hyvin erilaisissa ympäristöissä. Hän pohtii, miksi aito yhteys toiseen ihmiseen tuntuu nykypäivänä niin vaikealta.',
   },
@@ -52,6 +56,7 @@ export const speakers: Speaker[] = [
     id: 'tomas',
     name: 'Tomas Jouhilampi',
     topic: 'Väkivallan ehkäisy',
+    image: '/speakers/tomas.webp',
     description:
       'Tomas Jouhilampi on sanoSTOPväkivallalle-liikkeen perustaja. Hän sai vakavan aivovamman 15-vuotiaana ja toimii nyt väkivallattomuuden puolesta kasvattajana ja vaikuttajana.',
   },
@@ -71,6 +76,7 @@ export const artists: Artist[] = [
     name: 'Nupe',
     origin: 'Helsinki',
     genre: 'Hip-Hop / Melodinen räp',
+    image: '/artists/nupe.webp',
     description:
       'Nouseva helsinkiläisartisti, jonka melodinen sound ja vahvat räppi-verseet ovat voittaneet faneja koko Suomessa. Tunnetaan tarttuvista kertosäkeistä ja tunteikkaasta ilmaisusta.',
   },
@@ -79,6 +85,7 @@ export const artists: Artist[] = [
     name: 'Roman Aliev',
     origin: 'Suomi',
     genre: 'Pop',
+    image: '/artists/roman.webp',
     description:
       'Roman Aliev julkaisee suomen- ja venäjänkielistä poppia. Vuoden 2025 kappale "Milaja Moja" nousi suureen suosioon. Hän on myös aktiivinen TikTok- ja Instagram-vaikuttaja.',
   },

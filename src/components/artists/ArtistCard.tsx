@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Music } from 'lucide-react'
 import type { Artist } from '@/types'
 import Badge from '@/components/ui/Badge'
@@ -37,7 +38,17 @@ export default function ArtistCard({ artist, index }: { artist: Artist; index: n
       <div
         className={`flex h-32 items-center justify-center bg-gradient-to-br ${headerGradients[index % headerGradients.length]}`}
       >
-        <Music size={32} className="text-white/40" />
+        {artist.image ? (
+          <Image
+            src={artist.image}
+            alt={artist.name}
+            width={128}
+            height={128}
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <Music size={32} className="text-white/40" />
+        )}
       </div>
 
       {/* Body */}

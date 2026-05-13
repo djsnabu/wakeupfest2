@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Music } from 'lucide-react'
 import { artists } from '@/lib/data'
 import AnimatedSection from '@/components/ui/AnimatedSection'
@@ -19,16 +20,28 @@ export default function ArtistPreview() {
         {confirmed.map((artist, i) => (
           <AnimatedSection key={artist.id} delay={i * 0.1}>
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#0f0f1a] transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/40">
-              <div
-                className="flex h-24 items-center justify-center"
-                style={{
-                  background:
-                    i % 2 === 0
-                      ? 'linear-gradient(135deg, rgba(217,70,239,0.28), rgba(236,72,153,0.26))'
-                      : 'linear-gradient(135deg, rgba(250,204,21,0.28), rgba(234,179,8,0.26))',
-                }}
-              >
-                <Music size={28} className="text-white/60" />
+              <div className="flex h-24 items-center justify-center">
+                {artist.image ? (
+                  <Image
+                    src={artist.image}
+                    alt={artist.name}
+                    width={96}
+                    height={96}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div
+                    className="flex h-full w-full items-center justify-center"
+                    style={{
+                      background:
+                        i % 2 === 0
+                          ? 'linear-gradient(135deg, rgba(217,70,239,0.28), rgba(236,72,153,0.26))'
+                          : 'linear-gradient(135deg, rgba(250,204,21,0.28), rgba(234,179,8,0.26))',
+                    }}
+                  >
+                    <Music size={28} className="text-white/60" />
+                  </div>
+                )}
               </div>
               <div className="p-5">
                 <h3

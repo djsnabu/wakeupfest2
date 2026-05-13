@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { Speaker } from '@/types'
 import Badge from '@/components/ui/Badge'
 
@@ -18,20 +19,27 @@ function getInitials(name: string) {
     .join('')
 }
 
-function getGradient(id: string) {
-  const index = id.charCodeAt(0) % gradients.length
-  return gradients[index]
-}
-
 export default function SpeakerCard({ speaker, index }: { speaker: Speaker; index: number }) {
   return (
     <div className="flex flex-col rounded-2xl border border-white/10 bg-[#0f0f1a] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/30 hover:shadow-lg hover:shadow-orange-500/5">
       {/* Avatar */}
-      <div
-        className={`mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${gradients[index % gradients.length]} text-base font-bold text-black`}
-      >
-        {getInitials(speaker.name)}
-      </div>
+      {speaker.image ? (
+        <div className="mb-5 h-16 w-16 overflow-hidden rounded-full">
+          <Image
+            src={speaker.image}
+            alt={speaker.name}
+            width={64}
+            height={64}
+            className="h-full w-full object-cover"
+          />
+        </div>
+      ) : (
+        <div
+          className={`mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${gradients[index % gradients.length]} text-base font-bold text-black`}
+        >
+          {getInitials(speaker.name)}
+        </div>
+      )}
 
       {/* Name + handle */}
       <h3
