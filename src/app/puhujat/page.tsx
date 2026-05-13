@@ -5,8 +5,9 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Puhujat – WakeUpFest 2026',
-  description: 'WakeUpFest 2026 -tapahtuman puhujat: kokemusasiantuntijoita, ammattilaisia ja vaikuttajia.',
+  title: 'Puhujat – WakeUpfest 2026',
+  description:
+    'Päivän aikana lavalle nousee monipuolinen joukko kokemusasiantuntijoita, ammattilaisia & vaikuttajia. WakeUpfest 2026, Tampere.',
 }
 
 export default function PuhujatPage() {
@@ -15,9 +16,8 @@ export default function PuhujatPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Puhujat"
-            title="Vuoden 2026 esiintyjät"
-            subtitle="Monipuolinen joukko kokemusasiantuntijoita, ammattilaisia ja vaikuttajia."
+            title="Puhujat"
+            subtitle="Päivän aikana lavalle nousee monipuolinen joukko kokemusasiantuntijoita, ammattilaisia & vaikuttajia."
           />
         </AnimatedSection>
 

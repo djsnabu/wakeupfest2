@@ -1,14 +1,35 @@
 @import "tailwindcss";
 
+/* Brändi: logon WakeUp (keltainen kulta) + FEST (pinkki–magenta) tummaa taustaa vasten */
 @theme {
   --color-bg-base: #080810;
   --color-bg-card: #0f0f1a;
   --color-bg-card-hover: #161625;
-  --color-orange: #F97316;
-  --color-yellow: #EAB308;
-  --color-purple: #8B5CF6;
-  --color-pink: #EC4899;
-  --color-teal: #06B6D4;
+
+  /* “orange”-utilityt → lämpimämpi keltainen/kulta (logo WakeUp) */
+  --color-orange-200: #fde68a;
+  --color-orange-300: #fcd34d;
+  --color-orange-400: #facc15;
+  --color-orange-500: #eab308;
+  --color-orange-600: #ca8a04;
+
+  /* “purple” → fuksia/magenta (logo FEST), ei erillistä violettia */
+  --color-purple-300: #f0abfc;
+  --color-purple-400: #e879f9;
+  --color-purple-500: #d946ef;
+  --color-purple-600: #c026d3;
+  --color-purple-700: #a21caf;
+  --color-purple-800: #86198f;
+  --color-purple-900: #701a75;
+
+  --color-pink-300: #fbcfe8;
+  --color-pink-400: #f9a8d4;
+  --color-pink-500: #f472b6;
+  --color-pink-600: #ec4899;
+
+  --color-yellow-300: #fde047;
+  --color-yellow-400: #facc15;
+  --color-yellow-500: #eab308;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Syne', 'Inter', system-ui, sans-serif;
@@ -24,28 +45,43 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Logo WakeUp: vaalea keltainen → kulta */
 .gradient-text-primary {
-  background: linear-gradient(135deg, #F97316, #EAB308);
+  background: linear-gradient(135deg, #fffbeb 0%, #fde047 30%, #eab308 70%, #ca8a04 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
+/* Logo FEST: vaalea pinkki → magenta / syvä pinkki */
 .gradient-text-accent {
-  background: linear-gradient(135deg, #8B5CF6, #EC4899);
+  background: linear-gradient(135deg, #fce7f3 0%, #f472b6 40%, #db2777 80%, #9d174d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 @keyframes blob-pulse {
-  0%, 100% { transform: scale(1); opacity: 0.3; }
-  50% { transform: scale(1.15); opacity: 0.5; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .blob-animate {

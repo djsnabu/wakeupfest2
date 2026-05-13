@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { ArrowRight, Music } from 'lucide-react'
 import { artists } from '@/lib/data'
 import AnimatedSection from '@/components/ui/AnimatedSection'
-import SectionHeading from '@/components/ui/SectionHeading'
 import Badge from '@/components/ui/Badge'
 
 export default function ArtistPreview() {
@@ -11,24 +10,22 @@ export default function ArtistPreview() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <AnimatedSection>
-        <SectionHeading
-          eyebrow="Artistit"
-          title="Tänä vuonna lavalla"
-          subtitle="Live-musiikkia Tampereen Eteläpuistossa."
-        />
+        <p className="mx-auto mb-10 max-w-2xl text-center text-lg font-medium leading-relaxed text-white md:text-xl">
+          Artistikattauksemme koostuu nousevista tähdistä ja musiikkialan ammattilaisista!
+        </p>
       </AnimatedSection>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {confirmed.map((artist, i) => (
           <AnimatedSection key={artist.id} delay={i * 0.1}>
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#0f0f1a] transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/40">
-              {/* Header strip */}
               <div
                 className="flex h-24 items-center justify-center"
                 style={{
-                  background: i % 2 === 0
-                    ? 'linear-gradient(135deg, rgba(139,92,246,0.3), rgba(236,72,153,0.3))'
-                    : 'linear-gradient(135deg, rgba(249,115,22,0.3), rgba(234,179,8,0.3))',
+                  background:
+                    i % 2 === 0
+                      ? 'linear-gradient(135deg, rgba(217,70,239,0.28), rgba(236,72,153,0.26))'
+                      : 'linear-gradient(135deg, rgba(250,204,21,0.28), rgba(234,179,8,0.26))',
                 }}
               >
                 <Music size={28} className="text-white/60" />
@@ -49,7 +46,6 @@ export default function ArtistPreview() {
           </AnimatedSection>
         ))}
 
-        {/* Headliner mystery card */}
         <AnimatedSection delay={0.3}>
           <div className="overflow-hidden rounded-2xl border border-purple-500/40 bg-gradient-to-br from-purple-900/20 to-pink-900/20 transition-all duration-300 hover:-translate-y-1">
             <div className="flex h-24 items-center justify-center">
@@ -76,7 +72,7 @@ export default function ArtistPreview() {
           href="/artistit"
           className="inline-flex items-center gap-2 text-sm font-semibold text-purple-400 hover:text-purple-300 transition-colors"
         >
-          Kaikki artistit <ArrowRight size={16} />
+          Tutustu artisteihin <ArrowRight size={16} />
         </Link>
       </div>
     </section>

@@ -21,10 +21,12 @@ export default function GradientButton({
     'inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer'
 
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-orange-500 to-yellow-400 text-black shadow-orange-500/25',
-    secondary: 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-500/25',
+    primary:
+      'bg-gradient-to-r from-[#fde047] via-[#facc15] to-[#eab308] text-black shadow-[0_8px_30px_-6px_rgba(234,179,8,0.45)]',
+    secondary:
+      'bg-gradient-to-r from-[#e879f9] via-[#ec4899] to-[#db2777] text-white shadow-[0_8px_30px_-6px_rgba(236,72,153,0.35)]',
     outline:
-      'border border-white/30 bg-transparent text-white hover:border-orange-500/60 hover:bg-white/5',
+      'border border-white/30 bg-transparent text-white hover:border-[#facc15]/70 hover:bg-white/5',
   }
 
   const classes = `${baseClasses} ${variantClasses[variant]} ${className}`

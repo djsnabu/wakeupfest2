@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
 import { InstagramIcon } from '@/components/ui/InstagramIcon'
+import WakeUpFestLogo from '@/components/layout/WakeUpFestLogo'
 import { contacts, navLinks } from '@/lib/data'
 
 export default function Footer() {
@@ -12,6 +13,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {/* Logo + tagline */}
           <div>
+            <div className="mb-4">
+              <WakeUpFestLogo variant="footer" />
+            </div>
             <div className="flex items-center gap-2">
               <span
                 className="gradient-text-primary text-2xl font-black"

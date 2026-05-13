@@ -18,12 +18,13 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: 'WakeUpfest 2026 – Tampere',
+  title: 'WakeUpfest',
   description:
-    'WakeUpfest – ilmainen, päihteetön festivaali Tampereella 28.7.2026. Puhujia, artisteja ja workshopeja huumevalistuksesta ja hyvinvoinnista.',
+    'Heinäkuussa Tampereen Eteläpuistossa järjestetään ennennäkemätön hyväntekeväisyystapahtuma, jonka tavoitteena on ennen kaikkea nostaa Suomen huumetilanne näkyväksi. Artisteja, puhujia & workshopeja. Tätä ei ole ennen nähty. Tätä Suomi ei voi ohittaa!',
   openGraph: {
-    title: 'WakeUpfest 2026',
-    description: 'Tampere Eteläpuisto, 28.7.2026 klo 15–22. Ilmainen pääsy.',
+    title: 'WakeUpfest',
+    description:
+      'Heinäkuussa Tampereen Eteläpuistossa järjestetään ennennäkemätön hyväntekeväisyystapahtuma. Artisteja, puhujia & workshopeja. Seuraa somessa @wakeupfest_finland.',
     locale: 'fi_FI',
     type: 'website',
   },

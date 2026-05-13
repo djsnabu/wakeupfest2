@@ -7,8 +7,9 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 import GradientButton from '@/components/ui/GradientButton'
 
 export const metadata: Metadata = {
-  title: 'Artistit – WakeUpFest 2026',
-  description: 'WakeUpFest 2026 -tapahtuman artistit. Mansesteri, Nupe, Roman Aliev ja tuleva headliner.',
+  title: 'Artistit – WakeUpfest 2026',
+  description:
+    'Artistikattauksemme koostuu nousevista tähdistä ja musiikkialan ammattilaisista! WakeUpfest 2026, Tampere.',
 }
 
 export default function ArtistPage() {
@@ -20,9 +21,8 @@ export default function ArtistPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Artistit"
-            title="Musiikkia elämästä"
-            subtitle="Live-musiikkia Tampereella 28.7.2026 klo 15–22."
+            title="Artistit"
+            subtitle="Artistikattauksemme koostuu nousevista tähdistä ja musiikkialan ammattilaisista!"
           />
         </AnimatedSection>
 

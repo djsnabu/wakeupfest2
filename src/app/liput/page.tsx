@@ -7,8 +7,8 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Liput – WakeUpFest 2026',
-  description: 'WakeUpFest 2026 -liput ja tapahtumat Biletin kautta.',
+  title: 'Liput – WakeUpfest 2026',
+  description: 'WakeUpfest 2026 -liput ja tapahtumat Biletin kautta.',
 }
 
 export default function LiputPage() {
@@ -32,7 +32,7 @@ export default function LiputPage() {
             href="/tapahtumatiedot"
             className="text-sm font-medium text-gray-500 transition-colors hover:text-orange-300"
           >
-            ← Tapahtumatiedot
+            ← Tapahtumainfo
           </Link>
         </AnimatedSection>
       </div>

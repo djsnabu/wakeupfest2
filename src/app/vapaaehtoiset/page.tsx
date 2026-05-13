@@ -8,8 +8,8 @@ import Badge from '@/components/ui/Badge'
 import GradientButton from '@/components/ui/GradientButton'
 
 export const metadata: Metadata = {
-  title: 'Vapaaehtoistoiminta – WakeUpFest 2026',
-  description: 'Liity WakeUpFest 2026 vapaaehtoistiimiimme. Tapahtuma järjestetään kokonaan hyväntekeväisyytenä.',
+  title: 'Vapaaehtoiset – WakeUpfest 2026',
+  description: 'Liity WakeUpfest 2026 vapaaehtoistiimiin. Tapahtuma järjestetään kokonaan hyväntekeväisyytenä.',
 }
 
 const roles = [
@@ -44,8 +44,7 @@ export default function VapaaehtoistoimintaPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Vapaaehtoistoiminta"
-            title="Liity tiimiin"
+            title="Vapaaehtoiset"
             subtitle="Tapahtuma järjestetään kokonaan hyväntekeväisyystyönä — ei palkkoja, vain intohimoa ja merkitystä."
           />
         </AnimatedSection>
@@ -54,7 +53,9 @@ export default function VapaaehtoistoimintaPage() {
         <AnimatedSection delay={0.1} className="mb-12">
           <div
             className="rounded-2xl border border-purple-500/20 p-8 text-center"
-            style={{ background: 'linear-gradient(135deg, rgba(139,92,246,0.1), rgba(236,72,153,0.08))' }}
+            style={{
+              background: 'linear-gradient(135deg, rgba(217,70,239,0.1), rgba(236,72,153,0.08))',
+            }}
           >
             <Star size={40} className="mx-auto mb-4 text-purple-400" />
             <p className="mx-auto max-w-2xl text-gray-300 leading-relaxed">

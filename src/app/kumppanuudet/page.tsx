@@ -5,8 +5,8 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Kumppanuudet – WakeUpFest 2026',
-  description: 'Tule WakeUpFest 2026 -kumppaniksemme. Ilmainen hyväntekeväisyystapahtuma Tampereella.',
+  title: 'Yhteistyökumppanuus – WakeUpfest 2026',
+  description: 'Tule WakeUpfest 2026 -kumppaniksemme. Ilmainen hyväntekeväisyystapahtuma Tampereella.',
 }
 
 const reasons = [
@@ -39,9 +39,9 @@ export default function KumppanuudetPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Kumppanuudet"
+            eyebrow="Yhteistyökumppanuus"
             title="Tule kumppaniksemme"
-            subtitle="WakeUpFest on kokonaan hyväntekeväisyyspohjalta järjestettävä tapahtuma — ei palkkoja, ei voittoa."
+            subtitle="WakeUpfest on kokonaan hyväntekeväisyyspohjalta järjestettävä tapahtuma — ei palkkoja, ei voittoa."
           />
         </AnimatedSection>
 
@@ -49,10 +49,12 @@ export default function KumppanuudetPage() {
         <AnimatedSection delay={0.1} className="mb-12">
           <div
             className="rounded-2xl border border-white/10 p-8 text-center"
-            style={{ background: 'linear-gradient(135deg, rgba(249,115,22,0.08), rgba(139,92,246,0.08))' }}
+            style={{
+              background: 'linear-gradient(135deg, rgba(250,204,21,0.1), rgba(217,70,239,0.1))',
+            }}
           >
             <p className="mx-auto max-w-2xl text-gray-300 leading-relaxed">
-              WakeUpFest 2026 on Tampereen Eteläpuistossa järjestettävä ilmainen festivaali,
+              WakeUpfest 2026 on Tampereen Eteläpuistossa järjestettävä ilmainen festivaali,
               jonka tavoitteena on lisätä tietoisuutta Suomen huumatilanteesta. Tapahtuma
               yhdistää puhujia, musiikkia ja workshopeja — täysin päihteettömänä, kaikille avoimena päivänä.
             </p>

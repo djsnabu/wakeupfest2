@@ -1,14 +1,13 @@
 import type { Speaker, Artist, Workshop, NavLink } from '@/types'
 
 export const navLinks: NavLink[] = [
-  { href: '/', label: 'Koti' },
+  { href: '/', label: 'Etusivu' },
   { href: '/puhujat', label: 'Puhujat' },
   { href: '/artistit', label: 'Artistit' },
   { href: '/workshopit', label: 'Workshopit' },
-  { href: '/tapahtumatiedot', label: 'Tapahtuma' },
-  { href: '/liput', label: 'Liput' },
-  { href: '/kumppanuudet', label: 'Kumppanuudet' },
-  { href: '/vapaaehtoiset', label: 'Vapaaehtoistoiminta' },
+  { href: '/tapahtumatiedot', label: 'Tapahtumainfo' },
+  { href: '/kumppanuudet', label: 'Yhteistyökumppanuus' },
+  { href: '/vapaaehtoiset', label: 'Vapaaehtoiset' },
   { href: '/turvallisuus', label: 'Turvallisuus' },
 ]
 

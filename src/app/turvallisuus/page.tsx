@@ -5,8 +5,8 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Turvallisuus – WakeUpFest 2026',
-  description: 'WakeUpFest 2026 turvallisuusohjeet. Kielletyt tavarat, turvapalvelut ja käyttäytymissuositukset.',
+  title: 'Turvallisuus – WakeUpfest 2026',
+  description: 'WakeUpfest 2026 turvallisuusohjeet. Kielletyt tavarat, turvapalvelut ja käyttäytymissuositukset.',
 }
 
 const services = [
@@ -31,7 +31,7 @@ export default function TurvallisuusPage() {
           <SectionHeading
             eyebrow="Turvallisuus"
             title="Turvallinen tapahtuma kaikille"
-            subtitle="WakeUpFest järjestetään virallisten ohjeiden mukaisesti. Kaikkien oikeus turvallisuuteen on meille ensisijainen."
+            subtitle="WakeUpfest järjestetään virallisten ohjeiden mukaisesti. Kaikkien oikeus turvallisuuteen on meille ensisijainen."
           />
         </AnimatedSection>
 

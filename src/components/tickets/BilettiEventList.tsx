@@ -10,7 +10,7 @@ export default async function BilettiEventList({ limit }: { limit?: number }) {
   if (!configured) {
     return (
       <p className="rounded-2xl border border-white/10 bg-[#0f0f1a] px-6 py-8 text-center text-sm text-gray-400">
-        Lipputapahtumat näytetään, kun järjestäjä on lisännyt <strong className="text-gray-200">WakeUpFestin</strong> omat
+        Lipputapahtumat näytetään, kun järjestäjä on lisännyt <strong className="text-gray-200">WakeUpfestin</strong> omat
         Biletti-avaimet palvelimelle (
         <code className="text-orange-300/90">WAKEUPFEST_BILETTI_ORG_UUID</code>,{' '}
         <code className="text-orange-300/90">WAKEUPFEST_BILETTI_API_KEY</code>

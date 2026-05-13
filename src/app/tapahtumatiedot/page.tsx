@@ -5,8 +5,8 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Tapahtumatiedot – WakeUpFest 2026',
-  description: 'WakeUpFest 2026 tapahtumatiedot: 28.7.2026 klo 15–22, Tampere Eteläpuisto. Vapaa pääsy, ikärajaton.',
+  title: 'Tapahtumainfo – WakeUpfest 2026',
+  description: 'WakeUpfest 2026 tapahtumainfo: 28.7.2026 klo 15–22, Tampere Eteläpuisto. Vapaa pääsy, ikärajaton.',
 }
 
 const infoItems = [
@@ -23,11 +23,7 @@ export default function TapahtumatiedotPage() {
     <div className="pt-24 pb-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
-          <SectionHeading
-            eyebrow="Tapahtuma"
-            title="Tapahtumatiedot"
-            subtitle="Kaikki mitä sinun tarvitsee tietää WakeUpFest 2026:sta."
-          />
+          <SectionHeading title="Tapahtumainfo" />
         </AnimatedSection>
 
         {/* Hero date block */}
@@ -35,7 +31,7 @@ export default function TapahtumatiedotPage() {
           <div
             className="rounded-3xl border border-orange-500/20 p-10 text-center"
             style={{
-              background: 'linear-gradient(135deg, rgba(249,115,22,0.1), rgba(234,179,8,0.08))',
+              background: 'linear-gradient(135deg, rgba(250,204,21,0.12), rgba(234,179,8,0.1))',
             }}
           >
             <p className="gradient-text-primary text-7xl font-black md:text-9xl" style={{ fontFamily: 'var(--font-display)' }}>
@@ -130,7 +126,7 @@ export default function TapahtumatiedotPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="WakeUpFest 2026 sijainti – Eteläpuisto, Tampere"
+              title="WakeUpfest 2026 sijainti – Eteläpuisto, Tampere"
             />
           </div>
           <p className="mt-2 text-center text-xs text-gray-600">Eteläpuisto, Tampere</p>

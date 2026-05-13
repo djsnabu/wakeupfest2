@@ -10,7 +10,7 @@ export default function InstagramCTA() {
         <div
           className="mx-auto max-w-2xl rounded-3xl border border-white/10 p-12 text-center"
           style={{
-            background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(236,72,153,0.1))',
+            background: 'linear-gradient(135deg, rgba(217,70,239,0.14), rgba(236,72,153,0.12))',
           }}
         >
           <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-pink-500/15">

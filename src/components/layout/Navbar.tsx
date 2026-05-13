@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { navLinks } from '@/lib/data'
+import WakeUpFestLogo from '@/components/layout/WakeUpFestLogo'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -29,15 +30,18 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span
-            className="gradient-text-primary text-xl font-black tracking-tight"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
-            WakeUpfest
-          </span>
-          <span className="rounded bg-orange-500/20 px-1.5 py-0.5 text-xs font-bold text-orange-300">
-            2026
+        <Link href="/" className="flex items-center gap-3">
+          <WakeUpFestLogo variant="navbar" priority />
+          <span className="hidden min-[380px]:flex flex-col leading-tight">
+            <span
+              className="gradient-text-primary text-lg font-black tracking-tight md:text-xl"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              WakeUpfest
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-orange-300/90 md:text-xs">
+              2026
+            </span>
           </span>
         </Link>
 

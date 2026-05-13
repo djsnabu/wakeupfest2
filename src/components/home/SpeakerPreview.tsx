@@ -2,18 +2,15 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { speakers } from '@/lib/data'
 import AnimatedSection from '@/components/ui/AnimatedSection'
-import SectionHeading from '@/components/ui/SectionHeading'
 import SpeakerCard from '@/components/speakers/SpeakerCard'
 
 export default function SpeakerPreview() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <AnimatedSection>
-        <SectionHeading
-          eyebrow="Puhujat"
-          title="Inspiroivat esiintyjät"
-          subtitle="Kokemuksia, asiantuntemusta ja rohkeita puheenvuoroja."
-        />
+        <p className="mx-auto mb-10 max-w-2xl text-center text-lg font-medium leading-relaxed text-white md:text-xl">
+          Päivän aikana lavalle nousee monipuolinen joukko kokemusasiantuntijoita, ammattilaisia & vaikuttajia.
+        </p>
       </AnimatedSection>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -29,7 +26,7 @@ export default function SpeakerPreview() {
           href="/puhujat"
           className="inline-flex items-center gap-2 text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors"
         >
-          Kaikki puhujat ({speakers.length}) <ArrowRight size={16} />
+          Tutustu puhujiin <ArrowRight size={16} />
         </Link>
       </div>
     </section>
