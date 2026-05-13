@@ -8,8 +8,8 @@ import Badge from '@/components/ui/Badge'
 import GradientButton from '@/components/ui/GradientButton'
 
 export const metadata: Metadata = {
-  title: 'Vapaaehtoistoiminta – WakeUpfest 2026',
-  description: 'Liity WakeUpfest 2026 vapaaehtoistiimiimme. Tapahtuma järjestetään kokonaan hyväntekeväisyytenä.',
+  title: 'Vapaaehtoistoiminta – WakeUpFest 2026',
+  description: 'Liity WakeUpFest 2026 vapaaehtoistiimiimme. Tapahtuma järjestetään kokonaan hyväntekeväisyytenä.',
 }
 
 const roles = [

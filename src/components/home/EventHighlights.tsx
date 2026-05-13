@@ -19,7 +19,7 @@ const highlights = [
   {
     icon: Users,
     label: 'Kaikki ikäryhmät',
-    sub: '100% alkoholiton tapahtuma',
+    sub: '100% päihteetön tapahtuma',
     color: 'text-teal-400',
     bg: 'bg-teal-500/10',
   },

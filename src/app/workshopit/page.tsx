@@ -6,8 +6,8 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Workshopit – WakeUpfest 2026',
-  description: 'WakeUpfest 2026 tarjoaa neljä ilmaista workshopia: taidepaja, jooga, nyrkkeily ja kamppailulajit.',
+  title: 'Workshopit – WakeUpFest 2026',
+  description: 'WakeUpFest 2026 tarjoaa neljä ilmaista workshopia: taidepaja, jooga, nyrkkeily ja kamppailulajit.',
 }
 
 export default function WorkshopitPage() {

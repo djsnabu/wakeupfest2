@@ -6,6 +6,7 @@ export const navLinks: NavLink[] = [
   { href: '/artistit', label: 'Artistit' },
   { href: '/workshopit', label: 'Workshopit' },
   { href: '/tapahtumatiedot', label: 'Tapahtuma' },
+  { href: '/liput', label: 'Liput' },
   { href: '/kumppanuudet', label: 'Kumppanuudet' },
   { href: '/vapaaehtoiset', label: 'Vapaaehtoistoiminta' },
   { href: '/turvallisuus', label: 'Turvallisuus' },
@@ -132,7 +133,7 @@ export const workshops: Workshop[] = [
 ]
 
 export const prohibitedItems = [
-  'Alkoholi ja päihteet',
+  'Kaikki päihteet',
   'Polkupyörät, skootterit ja rullalaudat',
   'Aseet (tuliaseet, terä-aseet, monikäyttövälineet)',
   'Räjähteet, ilotulitteet, soihdut ja laserit',

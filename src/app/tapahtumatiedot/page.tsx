@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Calendar, Clock, MapPin, Ticket, Wine, Shield, Bus, Car, Package } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Tapahtumatiedot – WakeUpfest 2026',
-  description: 'WakeUpfest 2026 tapahtumatiedot: 28.7.2026 klo 15–22, Tampere Eteläpuisto. Vapaa pääsy, ikärajaton.',
+  title: 'Tapahtumatiedot – WakeUpFest 2026',
+  description: 'WakeUpFest 2026 tapahtumatiedot: 28.7.2026 klo 15–22, Tampere Eteläpuisto. Vapaa pääsy, ikärajaton.',
 }
 
 const infoItems = [
@@ -13,7 +14,7 @@ const infoItems = [
   { icon: Clock, label: 'Kellonaika', value: 'klo 15:00–22:00', color: 'text-yellow-400', bg: 'bg-yellow-500/10' },
   { icon: MapPin, label: 'Sijainti', value: 'Eteläpuisto, Tampere', color: 'text-pink-400', bg: 'bg-pink-500/10' },
   { icon: Ticket, label: 'Pääsy', value: 'Vapaa pääsy – kaikenikäisille', color: 'text-green-400', bg: 'bg-green-500/10' },
-  { icon: Wine, label: 'Tapahtuma', value: '100% alkoholiton', color: 'text-teal-400', bg: 'bg-teal-500/10' },
+  { icon: Wine, label: 'Tapahtuma', value: '100% päihteetön', color: 'text-teal-400', bg: 'bg-teal-500/10' },
   { icon: Shield, label: 'Turvallisuus', value: 'Turvahenkilöstö ja ensiapu paikalla', color: 'text-blue-400', bg: 'bg-blue-500/10' },
 ]
 
@@ -25,7 +26,7 @@ export default function TapahtumatiedotPage() {
           <SectionHeading
             eyebrow="Tapahtuma"
             title="Tapahtumatiedot"
-            subtitle="Kaikki mitä sinun tarvitsee tietää WakeUpfest 2026:sta."
+            subtitle="Kaikki mitä sinun tarvitsee tietää WakeUpFest 2026:sta."
           />
         </AnimatedSection>
 
@@ -61,6 +62,18 @@ export default function TapahtumatiedotPage() {
             </AnimatedSection>
           ))}
         </div>
+
+        <AnimatedSection delay={0.12} className="mb-12">
+          <div className="rounded-2xl border border-orange-500/20 bg-orange-500/5 p-6 text-center">
+            <p className="text-sm text-gray-300">
+              Jos myynnissä on erillisiä Biletti-tapahtumia (esim. sideventit), ne löytyvät{' '}
+              <Link href="/liput" className="font-semibold text-orange-300 underline-offset-2 hover:underline">
+                Liput-sivulta
+              </Link>
+              .
+            </p>
+          </div>
+        </AnimatedSection>
 
         {/* Getting there */}
         <AnimatedSection delay={0.3} className="mb-6">
@@ -117,7 +130,7 @@ export default function TapahtumatiedotPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="WakeUpfest 2026 sijainti – Eteläpuisto, Tampere"
+              title="WakeUpFest 2026 sijainti – Eteläpuisto, Tampere"
             />
           </div>
           <p className="mt-2 text-center text-xs text-gray-600">Eteläpuisto, Tampere</p>

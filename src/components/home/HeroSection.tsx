@@ -51,7 +51,7 @@ export default function HeroSection() {
         {/* Tagline */}
         <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-400 md:text-xl">
           Ennennäkemätön hyväntekeväisyysfestivaali — puhujia, musiikkia ja workshopeja.
-          <span className="block mt-1 text-gray-500">Ilmainen · Ikärajaton · Alkoholiton</span>
+          <span className="block mt-1 text-gray-500">Ilmainen · Ikärajaton · Päihteetön</span>
         </p>
 
         {/* CTAs */}

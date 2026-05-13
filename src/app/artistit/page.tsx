@@ -7,8 +7,8 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 import GradientButton from '@/components/ui/GradientButton'
 
 export const metadata: Metadata = {
-  title: 'Artistit – WakeUpfest 2026',
-  description: 'WakeUpfest 2026 -tapahtuman artistit. Mansesteri, Nupe, Roman Aliev ja tuleva headliner.',
+  title: 'Artistit – WakeUpFest 2026',
+  description: 'WakeUpFest 2026 -tapahtuman artistit. Mansesteri, Nupe, Roman Aliev ja tuleva headliner.',
 }
 
 export default function ArtistPage() {

@@ -5,8 +5,8 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Puhujat – WakeUpfest 2026',
-  description: 'WakeUpfest 2026 -tapahtuman puhujat: kokemusasiantuntijoita, ammattilaisia ja vaikuttajia.',
+  title: 'Puhujat – WakeUpFest 2026',
+  description: 'WakeUpFest 2026 -tapahtuman puhujat: kokemusasiantuntijoita, ammattilaisia ja vaikuttajia.',
 }
 
 export default function PuhujatPage() {

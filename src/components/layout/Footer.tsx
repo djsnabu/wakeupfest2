@@ -24,7 +24,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-3 text-sm text-gray-500">
-              Ensimmäinen vuosi – ilmainen, alkoholiton festivaali Tampereella.
+              Ensimmäinen vuosi – ilmainen, päihteetön festivaali Tampereella.
             </p>
             <p className="mt-1 text-sm text-gray-600">28. heinäkuuta 2026 · Eteläpuisto</p>
           </div>
