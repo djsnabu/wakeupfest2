@@ -1,0 +1,37 @@
+import { contacts } from '@/lib/data'
+import GradientButton from '@/components/ui/GradientButton'
+import AnimatedSection from '@/components/ui/AnimatedSection'
+import { InstagramIcon } from '@/components/ui/InstagramIcon'
+
+export default function InstagramCTA() {
+  return (
+    <section className="px-4 py-24 sm:px-6">
+      <AnimatedSection>
+        <div
+          className="mx-auto max-w-2xl rounded-3xl border border-white/10 p-12 text-center"
+          style={{
+            background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(236,72,153,0.1))',
+          }}
+        >
+          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-pink-500/15">
+            <InstagramIcon size={28} className="text-pink-400" />
+          </div>
+          <h2
+            className="mb-2 text-3xl font-bold text-white"
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
+            Seuraa meitä
+          </h2>
+          <p className="mb-6 text-gray-400">
+            Uusimmat uutiset, artistijulkistukset ja tapahtumapäivitykset Instagramissa.
+          </p>
+          <p className="mb-8 text-xl font-bold text-pink-300">{contacts.instagram}</p>
+          <GradientButton href={contacts.instagramUrl} variant="secondary" external>
+            <InstagramIcon size={16} />
+            Seuraa Instagramissa
+          </GradientButton>
+        </div>
+      </AnimatedSection>
+    </section>
+  )
+}

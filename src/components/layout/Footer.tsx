@@ -1,0 +1,96 @@
+import Link from 'next/link'
+import { Mail } from 'lucide-react'
+import { InstagramIcon } from '@/components/ui/InstagramIcon'
+import { contacts, navLinks } from '@/lib/data'
+
+export default function Footer() {
+  const quickLinks = navLinks.slice(1, 5)
+
+  return (
+    <footer className="mt-24 border-t border-white/10 bg-[#080810]">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+          {/* Logo + tagline */}
+          <div>
+            <div className="flex items-center gap-2">
+              <span
+                className="gradient-text-primary text-2xl font-black"
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                WakeUpfest
+              </span>
+              <span className="rounded bg-orange-500/20 px-1.5 py-0.5 text-xs font-bold text-orange-300">
+                2026
+              </span>
+            </div>
+            <p className="mt-3 text-sm text-gray-500">
+              Ensimmäinen vuosi – ilmainen, alkoholiton festivaali Tampereella.
+            </p>
+            <p className="mt-1 text-sm text-gray-600">28. heinäkuuta 2026 · Eteläpuisto</p>
+          </div>
+
+          {/* Quick links */}
+          <div>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-gray-500">
+              Sivukartta
+            </h3>
+            <ul className="space-y-2">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-gray-500">
+              Yhteystiedot
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href={`mailto:${contacts.tiina.email}`}
+                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  <Mail size={14} className="text-gray-600" />
+                  <span>{contacts.tiina.name}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${contacts.jonna.email}`}
+                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  <Mail size={14} className="text-gray-600" />
+                  <span>{contacts.jonna.name}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={contacts.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-pink-400 transition-colors"
+                >
+                  <InstagramIcon size={14} className="text-gray-600" />
+                  <span>{contacts.instagram}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-white/5 pt-6 text-center text-xs text-gray-700">
+          © 2026 WakeUpfest. Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä.
+        </div>
+      </div>
+    </footer>
+  )
+}
