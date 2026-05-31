@@ -24,6 +24,17 @@ export interface Workshop {
   facilitator: string
   description: string
   icon: string
+  image?: string
+  imageFit?: 'cover' | 'contain'
+}
+
+export interface Partner {
+  id: string
+  name: string
+  image: string
+  alt: string
+  url?: string
+  variant?: 'dark' | 'light'
 }
 
 export interface NavLink {

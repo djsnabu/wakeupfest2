@@ -1,4 +1,4 @@
-import type { Speaker, Artist, Workshop, NavLink } from '@/types'
+import type { Speaker, Artist, Workshop, Partner, NavLink } from '@/types'
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Etusivu' },
@@ -52,8 +52,17 @@ export const speakers: Speaker[] = [
     id: 'tomas',
     name: 'Tomas Jouhilampi',
     topic: 'Väkivallan ehkäisy',
+    image: '/speakers/tomas-jouhilampi.webp',
     description:
       'Tomas Jouhilampi on sanoSTOPväkivallalle-liikkeen perustaja. Hän sai vakavan aivovamman 15-vuotiaana ja toimii nyt väkivallattomuuden puolesta kasvattajana ja vaikuttajana.',
+  },
+  {
+    id: 'lucy',
+    name: 'Lucy',
+    topic: 'Puhuja',
+    image: '/speakers/lucy.webp',
+    description:
+      'Lucy tuo WakeUpfestiin pysäyttävän puheenvuoron. Tarkemmat tiedot ohjelmasisällöstä julkaistaan lähempänä tapahtumaa.',
   },
 ]
 
@@ -63,6 +72,7 @@ export const artists: Artist[] = [
     name: 'Mansesteri',
     origin: 'Tampere',
     genre: 'Indie Hip-Hop',
+    image: '/artists/mansesteri.webp',
     description:
       'Tamperelainen indie hip-hop -yhtye, joka koostuu kokeneiden räppäreiden MC Manen ja Vainisin sekä DJ Kalun muodostamasta triosta. Yksi Suomen lahjakkaimmista omakustanneyhtyeistä.',
   },
@@ -80,7 +90,6 @@ export const artists: Artist[] = [
     name: 'Roman Aliev',
     origin: 'Suomi',
     genre: 'Pop',
-    image: '/artists/roman.webp',
     description:
       'Roman Aliev julkaisee suomen- ja venäjänkielistä poppia. Vuoden 2025 kappale "Milaja Moja" nousi suureen suosioon. Hän on myös aktiivinen TikTok- ja Instagram-vaikuttaja.',
   },
@@ -130,6 +139,25 @@ export const workshops: Workshop[] = [
     description:
       'Chitalada Finland on yli 45 vuotta toiminut tamperelainen thainyrkkeilytalli. Tutustumisharjoitus sisältää thainyrkkeilyä, potkunyrkkeilyä ja Krav Magaa. Kaikki ovat tervetulleita.',
     icon: 'Shield',
+    image: '/workshops/chitalada-finland.webp',
+    imageFit: 'contain',
+  },
+]
+
+export const partners: Partner[] = [
+  {
+    id: 'worknow',
+    name: 'Worknow',
+    image: '/partners/worknow.webp',
+    alt: 'Worknow-logo',
+    variant: 'light',
+  },
+  {
+    id: 'sj-saumaus',
+    name: 'SJ-Saumaus Oy',
+    image: '/partners/sj-saumaus.webp',
+    alt: 'SJ-Saumaus Oy -logo',
+    variant: 'dark',
   },
 ]
 

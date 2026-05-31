@@ -1,6 +1,7 @@
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import { Mail, Heart, Eye, Users } from 'lucide-react'
-import { contacts } from '@/lib/data'
+import { contacts, partners } from '@/lib/data'
 import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
@@ -75,6 +76,41 @@ export default function KumppanuudetPage() {
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Partners */}
+        <AnimatedSection delay={0.25} className="mb-16">
+          <div className="rounded-2xl border border-white/10 bg-[#0f0f1a] p-8">
+            <div className="mb-8 text-center">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400">
+                Mukana tukemassa
+              </p>
+              <h3
+                className="text-2xl font-black text-white md:text-3xl"
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                Yhteistyökumppanit
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {partners.map((partner) => (
+                <div
+                  key={partner.id}
+                  className={`flex min-h-32 items-center justify-center rounded-xl border border-white/10 p-6 ${
+                    partner.variant === 'light' ? 'bg-white' : 'bg-black/40'
+                  }`}
+                >
+                  <Image
+                    src={partner.image}
+                    alt={partner.alt}
+                    width={360}
+                    height={180}
+                    className="max-h-20 w-auto object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </AnimatedSection>
 
         {/* Contact */}
         <AnimatedSection delay={0.3}>

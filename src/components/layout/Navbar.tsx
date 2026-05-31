@@ -18,10 +18,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  useEffect(() => {
-    setOpen(false)
-  }, [pathname])
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -85,6 +81,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={() => setOpen(false)}
                   className={`rounded-xl px-4 py-3 text-sm font-medium transition-all ${
                     active
                       ? 'bg-orange-500/15 text-orange-300'
