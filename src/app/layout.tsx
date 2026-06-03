@@ -3,6 +3,7 @@ import { Inter, Syne } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import { venue } from '@/lib/data'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,13 +19,11 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: 'WakeUpfest',
-  description:
-    'Heinäkuussa Tampereen Eteläpuistossa järjestetään ennennäkemätön hyväntekeväisyystapahtuma, jonka tavoitteena on ennen kaikkea nostaa Suomen huumetilanne näkyväksi. Artisteja, puhujia & workshopeja. Tätä ei ole ennen nähty. Tätä Suomi ei voi ohittaa!',
+  title: 'WakeUpfest 2026',
+  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput. ${venue.nameEn}, ${venue.address}.`,
   openGraph: {
-    title: 'WakeUpfest',
-    description:
-      'Heinäkuussa Tampereen Eteläpuistossa järjestetään ennennäkemätön hyväntekeväisyystapahtuma. Artisteja, puhujia & workshopeja. Seuraa somessa @wakeupfest_finland.',
+    title: 'WakeUpfest 2026',
+    description: `28.7.2026 klo 15–22 · ${venue.nameEn}, Tampere. Hyväntekeväisyystapahtuma — seuraa @wakeupfest_finland.`,
     locale: 'fi_FI',
     type: 'website',
   },
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fi" className={`${inter.variable} ${syne.variable}`}>
-      <body className="bg-[#080810] text-white font-sans antialiased">
+      <body className="bg-bg-base text-gray-900 font-sans antialiased">
         <Navbar />
         <main>{children}</main>
         <Footer />

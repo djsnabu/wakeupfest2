@@ -2,25 +2,30 @@
 
 import Image from 'next/image'
 
-const SRC = '/wakeupfest-logo.jpg'
-const INTRINSIC_W = 1024
-const INTRINSIC_H = 438
+const LOGO_SRC = '/wakeupfest-logo.png'
+const HERO_SRC = '/wakeupfest-hero.jpg'
+const LOGO_W = 515
+const LOGO_H = 249
+const HERO_W = 1024
+const HERO_H = 438
 
 type Variant = 'navbar' | 'hero' | 'footer'
 
-const variantClass: Record<Variant, { wrap: string; img: string }> = {
+const variantClass: Record<Variant, { wrap: string; img: string; src: string }> = {
   navbar: {
-    wrap: 'rounded-xl bg-white px-2 py-1 shadow-md shadow-black/20',
-    img: 'h-8 w-auto md:h-9',
+    src: LOGO_SRC,
+    wrap: 'inline-block shrink-0',
+    img: 'h-9 w-auto max-w-[min(42vw,11rem)] md:h-10',
   },
   hero: {
-    wrap:
-      'mx-auto inline-block rounded-3xl bg-white p-4 shadow-2xl shadow-black/50 md:p-5',
-    img: 'h-[4.5rem] w-auto md:h-28 lg:h-32',
+    src: HERO_SRC,
+    wrap: 'mx-auto inline-block w-full max-w-5xl',
+    img: 'h-auto w-full rounded-2xl shadow-2xl shadow-gray-300/60',
   },
   footer: {
-    wrap: 'inline-block rounded-xl bg-white p-2 shadow-md shadow-black/20',
-    img: 'h-11 w-auto sm:h-12',
+    src: LOGO_SRC,
+    wrap: 'inline-block shrink-0',
+    img: 'h-12 w-auto max-w-[14rem] sm:h-14',
   },
 }
 
@@ -31,18 +36,22 @@ export default function WakeUpFestLogo({
   variant?: Variant
   priority?: boolean
 }) {
-  const { wrap, img } = variantClass[variant]
+  const { wrap, img, src } = variantClass[variant]
 
   return (
     <span className={wrap}>
       <Image
-        src={SRC}
+        src={src}
         alt="WakeUpfest"
-        width={INTRINSIC_W}
-        height={INTRINSIC_H}
-        className={`block object-contain object-left ${img}`}
+        width={variant === 'hero' ? HERO_W : LOGO_W}
+        height={variant === 'hero' ? HERO_H : LOGO_H}
+        className={`block object-contain ${img}`}
         priority={priority}
-        sizes={variant === 'hero' ? '(max-width: 768px) 280px, 360px' : '(max-width: 768px) 140px, 160px'}
+        sizes={
+          variant === 'hero'
+            ? '(max-width: 768px) 100vw, 1024px'
+            : '(max-width: 768px) 160px, 200px'
+        }
       />
     </span>
   )

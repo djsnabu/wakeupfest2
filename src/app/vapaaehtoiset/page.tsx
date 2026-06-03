@@ -17,22 +17,22 @@ const roles = [
     icon: HandHeart,
     title: 'Tapahtuma-assistentti',
     desc: 'Auta vieraita tapahtuma-alueella, opasta kävijöitä ja huolehdi sujuvasta kulusta.',
-    color: 'text-orange-400',
-    bg: 'bg-orange-500/10',
+    color: 'text-orange-700',
+    bg: 'bg-orange-100',
   },
   {
     icon: Megaphone,
     title: 'Viestintä & some',
     desc: 'Auta tapahtuman markkinoinnissa Instagramissa, TikTokissa tai muissa kanavissa.',
-    color: 'text-pink-400',
-    bg: 'bg-pink-500/10',
+    color: 'text-pink-700',
+    bg: 'bg-pink-100',
   },
   {
     icon: MessageSquare,
     title: 'Asiakaspalvelu',
     desc: 'Toimi infopisteellä ja vastaa kävijöiden kysymyksiin tapahtuman aikana.',
-    color: 'text-teal-400',
-    bg: 'bg-teal-500/10',
+    color: 'text-teal-700',
+    bg: 'bg-teal-100',
   },
 ]
 
@@ -44,24 +44,24 @@ export default function VapaaehtoistoimintaPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
           <SectionHeading
-            title="Vapaaehtoiset"
-            subtitle="Tapahtuma järjestetään kokonaan hyväntekeväisyystyönä — ei palkkoja, vain intohimoa ja merkitystä."
+            title="Haluatko osallistua Wake Up festin toteuttamiseen?"
           />
         </AnimatedSection>
 
         {/* Hero */}
         <AnimatedSection delay={0.1} className="mb-12">
           <div
-            className="rounded-2xl border border-purple-500/20 p-8 text-center"
+            className="rounded-2xl border border-purple-200 bg-purple-50/50 p-8 text-center"
             style={{
               background: 'linear-gradient(135deg, rgba(217,70,239,0.1), rgba(236,72,153,0.08))',
             }}
           >
-            <Star size={40} className="mx-auto mb-4 text-purple-400" />
-            <p className="mx-auto max-w-2xl text-gray-300 leading-relaxed">
-              Haemme vapaaehtoisia auttamaan ainutlaatuisen tapahtuman toteuttamisessa.
-              Voit myös ilmoittautua järjestämään oman pop-up-pisteen tapahtuma-alueelle.
-              Ota yhteyttä ja kerro miten haluaisit osallistua!
+            <Star size={40} className="mx-auto mb-4 text-purple-700" />
+            <p className="mx-auto max-w-2xl text-gray-600 leading-relaxed">
+              Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä, josta ei makseta
+              rahallista korvausta tai palkkaa. Talkooväelle on kuitenkin aina tarvetta, joten kerro
+              meille osaamisestasi tai mielenkiinnonkohteistasi, tai jos haluat esimerkiksi toteuttaa
+              tapahtumassa oman pop up-pisteen.
             </p>
           </div>
         </AnimatedSection>
@@ -70,12 +70,12 @@ export default function VapaaehtoistoimintaPage() {
         <div className="mb-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
           {roles.map((r, i) => (
             <AnimatedSection key={r.title} delay={i * 0.1}>
-              <div className="rounded-2xl border border-white/10 bg-[#0f0f1a] p-6">
+              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-6">
                 <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-xl ${r.bg}`}>
                   <r.icon size={22} className={r.color} />
                 </div>
-                <h3 className="mb-2 font-bold text-white">{r.title}</h3>
-                <p className="text-sm text-gray-400">{r.desc}</p>
+                <h3 className="mb-2 font-bold text-gray-900">{r.title}</h3>
+                <p className="text-sm text-gray-600">{r.desc}</p>
               </div>
             </AnimatedSection>
           ))}
@@ -95,25 +95,25 @@ export default function VapaaehtoistoimintaPage() {
 
         {/* Contact */}
         <AnimatedSection delay={0.4}>
-          <div className="rounded-2xl border border-white/10 bg-[#0f0f1a] p-8">
-            <h3 className="mb-2 text-xl font-bold text-white" style={{ fontFamily: 'var(--font-display)' }}>
-              Ilmoittaudu vapaaehtoiseksi
+          <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8">
+            <h3 className="mb-2 text-xl font-bold text-gray-900" style={{ fontFamily: 'var(--font-display)' }}>
+              Ota yhteyttä
             </h3>
-            <p className="mb-6 text-sm text-gray-400">
-              Ota yhteyttä sähköpostilla tai seuraa meitä Instagramissa.
+            <p className="mb-6 text-sm text-gray-600">
+              Kerro meille, miten haluaisit osallistua. Voit myös seurata meitä Instagramissa.
             </p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[contacts.tiina, contacts.jonna].map((c) => (
                 <a
                   key={c.email}
                   href={`mailto:${c.email}`}
-                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-purple-500/40 hover:bg-purple-500/5"
+                  className="flex items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 p-4 transition-colors hover:border-purple-300 hover:bg-purple-50"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-purple-500/10">
-                    <Mail size={18} className="text-purple-400" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-purple-100">
+                    <Mail size={18} className="text-purple-700" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-white">{c.name}</p>
+                    <p className="text-sm font-semibold text-gray-900">{c.name}</p>
                     <p className="text-xs text-gray-500">{c.email}</p>
                   </div>
                 </a>

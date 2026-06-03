@@ -6,9 +6,15 @@ interface AnimatedSectionProps {
   children: React.ReactNode
   delay?: number
   className?: string
+  id?: string
 }
 
-export default function AnimatedSection({ children, delay = 0, className = '' }: AnimatedSectionProps) {
+export default function AnimatedSection({
+  children,
+  delay = 0,
+  className = '',
+  id,
+}: AnimatedSectionProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
 
@@ -30,6 +36,7 @@ export default function AnimatedSection({ children, delay = 0, className = '' }:
 
   return (
     <div
+      id={id}
       ref={ref}
       className={className}
       style={{

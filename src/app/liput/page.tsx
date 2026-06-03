@@ -1,14 +1,16 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import BilettiEventList from '@/components/tickets/BilettiEventList'
+import TicketCta from '@/components/tickets/TicketCta'
 import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
+import { ticketInfo } from '@/lib/data'
 
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Liput – WakeUpfest 2026',
-  description: 'WakeUpfest 2026 -liput ja tapahtumat Biletin kautta.',
+  description: `${ticketInfo.headline} Biletin kautta. ${ticketInfo.description}`,
 }
 
 export default function LiputPage() {
@@ -19,18 +21,20 @@ export default function LiputPage() {
           <SectionHeading
             eyebrow="Biletti"
             title="Liput"
-            subtitle="Tulevat tapahtumat ja lipunosto Biletin kautta. Avautuu uuteen välilehteen."
+            subtitle={ticketInfo.description}
           />
         </AnimatedSection>
 
-        <AnimatedSection delay={0.1} className="mt-10">
-          <BilettiEventList />
+        <AnimatedSection delay={0.08} className="mt-10">
+          <TicketCta />
         </AnimatedSection>
+
+        <BilettiEventList />
 
         <AnimatedSection delay={0.15} className="mt-10 text-center">
           <Link
             href="/tapahtumatiedot"
-            className="text-sm font-medium text-gray-500 transition-colors hover:text-orange-300"
+            className="text-sm font-medium text-gray-500 transition-colors hover:text-orange-800"
           >
             ← Tapahtumainfo
           </Link>

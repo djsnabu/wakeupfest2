@@ -6,10 +6,10 @@ interface BadgeProps {
 
 export default function Badge({ children, variant = 'glass', className = '' }: BadgeProps) {
   const variants = {
-    orange: 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
-    purple: 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
-    teal: 'bg-teal-500/20 text-teal-300 border border-teal-500/30',
-    glass: 'bg-white/10 text-white border border-white/20',
+    orange: 'bg-orange-100 text-orange-800 border border-orange-200',
+    purple: 'bg-purple-100 text-purple-800 border border-purple-200',
+    teal: 'bg-teal-100 text-teal-800 border border-teal-200',
+    glass: 'bg-gray-100 text-gray-800 border border-gray-200',
   }
   return (
     <span

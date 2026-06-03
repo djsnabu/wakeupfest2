@@ -21,13 +21,13 @@ export default function SectionHeading({
         </p>
       )}
       <h2
-        className="font-display text-4xl font-bold text-white md:text-5xl"
+        className="font-display text-4xl font-bold text-gray-900 md:text-5xl"
         style={{ fontFamily: 'var(--font-display)' }}
       >
         {title}
       </h2>
       {subtitle && (
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">{subtitle}</p>
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">{subtitle}</p>
       )}
     </div>
   )

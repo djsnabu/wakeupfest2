@@ -2,13 +2,16 @@ import Link from 'next/link'
 import { Mail } from 'lucide-react'
 import { InstagramIcon } from '@/components/ui/InstagramIcon'
 import WakeUpFestLogo from '@/components/layout/WakeUpFestLogo'
-import { contacts, navLinks } from '@/lib/data'
+import { contacts, navLinks, venue } from '@/lib/data'
 
 export default function Footer() {
-  const quickLinks = navLinks.slice(1, 5)
+  const quickLinks = [
+    ...navLinks.filter((link) => link.href !== '/'),
+    { href: '/liput', label: 'Liput' },
+  ]
 
   return (
-    <footer className="mt-24 border-t border-white/10 bg-[#080810]">
+    <footer className="mt-24 border-t border-gray-200 bg-bg-base">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {/* Logo + tagline */}
@@ -23,14 +26,15 @@ export default function Footer() {
               >
                 WakeUpfest
               </span>
-              <span className="rounded bg-orange-500/20 px-1.5 py-0.5 text-xs font-bold text-orange-300">
+              <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-bold text-orange-800">
                 2026
               </span>
             </div>
             <p className="mt-3 text-sm text-gray-500">
-              Ensimmäinen vuosi – ilmainen, päihteetön festivaali Tampereella.
+              Hyväntekeväisyysfestivaali Tampereella — päihteetön, ikärajaton.
             </p>
-            <p className="mt-1 text-sm text-gray-600">28. heinäkuuta 2026 · Eteläpuisto</p>
+            <p className="mt-1 text-sm text-gray-600">28. heinäkuuta 2026 · {venue.short}</p>
+            <p className="mt-0.5 text-xs text-gray-500">{venue.nameEn}</p>
           </div>
 
           {/* Quick links */}
@@ -43,7 +47,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -61,7 +65,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${contacts.tiina.email}`}
-                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                  className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Mail size={14} className="text-gray-600" />
                   <span>{contacts.tiina.name}</span>
@@ -70,7 +74,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${contacts.jonna.email}`}
-                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                  className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Mail size={14} className="text-gray-600" />
                   <span>{contacts.jonna.name}</span>
@@ -81,7 +85,7 @@ export default function Footer() {
                   href={contacts.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-pink-400 transition-colors"
+                  className="flex items-center gap-2 text-sm text-gray-600 hover:text-pink-700 transition-colors"
                 >
                   <InstagramIcon size={14} className="text-gray-600" />
                   <span>{contacts.instagram}</span>
@@ -91,7 +95,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/5 pt-6 text-center text-xs text-gray-700">
+        <div className="mt-12 border-t border-gray-100 pt-6 text-center text-xs text-gray-700">
           © 2026 WakeUpfest. Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä.
         </div>
       </div>

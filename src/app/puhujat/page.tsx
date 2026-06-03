@@ -21,9 +21,9 @@ export default function PuhujatPage() {
           />
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
           {speakers.map((speaker, i) => (
-            <AnimatedSection key={speaker.id} delay={i * 0.08}>
+            <AnimatedSection key={speaker.id} delay={i * 0.08} className="h-full">
               <SpeakerCard speaker={speaker} index={i} />
             </AnimatedSection>
           ))}

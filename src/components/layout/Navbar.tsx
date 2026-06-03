@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#080810]/95 shadow-lg shadow-black/50 backdrop-blur-md' : 'bg-transparent'
+        scrolled ? 'bg-bg-base/95 shadow-lg shadow-gray-200/80 backdrop-blur-md' : 'bg-transparent'
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
@@ -35,7 +35,7 @@ export default function Navbar() {
             >
               WakeUpfest
             </span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-orange-300/90 md:text-xs">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-orange-600 md:text-xs">
               2026
             </span>
           </span>
@@ -51,8 +51,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`rounded-full px-3 py-1.5 text-sm transition-all duration-200 ${
                   active
-                    ? 'bg-white/10 text-white font-semibold'
-                    : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-gray-100 text-gray-900 font-semibold'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
               >
                 {link.label}
@@ -63,7 +63,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-400 hover:bg-white/10 hover:text-white transition-colors md:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors md:hidden"
           onClick={() => setOpen((o) => !o)}
           aria-label="Valikko"
         >
@@ -73,7 +73,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-white/10 bg-[#080810]/98 backdrop-blur-md md:hidden">
+        <div className="border-t border-gray-200 bg-bg-base/98 backdrop-blur-md md:hidden">
           <nav className="flex flex-col gap-1 px-4 py-4">
             {navLinks.map((link) => {
               const active = pathname === link.href
@@ -84,8 +84,8 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={`rounded-xl px-4 py-3 text-sm font-medium transition-all ${
                     active
-                      ? 'bg-orange-500/15 text-orange-300'
-                      : 'text-gray-300 hover:bg-white/5 hover:text-white'
+                      ? 'bg-orange-500/15 text-orange-700'
+                      : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   }`}
                 >
                   {link.label}

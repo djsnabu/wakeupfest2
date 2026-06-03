@@ -26,7 +26,7 @@ export default function GradientButton({
     secondary:
       'bg-gradient-to-r from-[#e879f9] via-[#ec4899] to-[#db2777] text-white shadow-[0_8px_30px_-6px_rgba(236,72,153,0.35)]',
     outline:
-      'border border-white/30 bg-transparent text-white hover:border-[#facc15]/70 hover:bg-white/5',
+      'border border-gray-300 bg-transparent text-gray-800 hover:border-[#ca8a04] hover:bg-gray-50',
   }
 
   const classes = `${baseClasses} ${variantClasses[variant]} ${className}`

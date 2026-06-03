@@ -5,6 +5,8 @@ export interface Speaker {
   topic: string
   description: string
   image?: string
+  /** CSS object-position for portrait crops, e.g. "50% 30%" */
+  imagePosition?: string
 }
 
 export interface Artist {
@@ -13,8 +15,9 @@ export interface Artist {
   origin: string
   genre: string
   description: string
-  isHeadliner?: boolean
   image?: string
+  /** CSS object-position for portrait crops, e.g. "50% 30%" */
+  imagePosition?: string
 }
 
 export interface Workshop {
@@ -26,6 +29,9 @@ export interface Workshop {
   icon: string
   image?: string
   imageFit?: 'cover' | 'contain'
+  imagePosition?: string
+  /** Tailwind bg class for logo/banner area, e.g. bg-[#0f1a4d] */
+  imageBg?: string
 }
 
 export interface Partner {
@@ -40,4 +46,16 @@ export interface Partner {
 export interface NavLink {
   href: string
   label: string
+}
+
+export interface FaqItem {
+  id: string
+  question: string
+  answer: string
+  /** Optional internal path appended as a link after the answer */
+  linkHref?: string
+  linkLabel?: string
+  /** Optional external URL in the answer context */
+  externalHref?: string
+  externalLabel?: string
 }
