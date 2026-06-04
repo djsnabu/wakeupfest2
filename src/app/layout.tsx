@@ -20,10 +20,10 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: 'WakeUpfest 2026',
-  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput. ${venue.nameEn}, ${venue.address}.`,
+  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput. ${venue.address}, Tampere.`,
   openGraph: {
     title: 'WakeUpfest 2026',
-    description: `28.7.2026 klo 15–22 · ${venue.nameEn}, Tampere. Hyväntekeväisyystapahtuma — seuraa @wakeupfest_finland.`,
+    description: `28.7.2026 klo 15–22 · ${venue.name}, Tampere. Hyväntekeväisyystapahtuma — seuraa @wakeupfest_finland.`,
     locale: 'fi_FI',
     type: 'website',
   },

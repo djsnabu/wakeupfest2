@@ -8,9 +8,8 @@ export const ticketInfo = {
 }
 
 export const venue = {
-  nameEn: 'Southern Park',
-  nameFi: 'Eteläpuisto',
-  address: 'Eteläpuisto, 33200 Tampere, Finland',
+  name: 'Eteläpuisto',
+  address: 'Eteläpuisto, 33200 Tampere',
   /** Short label for nav, footer, metadata */
   short: 'Eteläpuisto, 33200 Tampere',
   mapsEmbedSrc:
@@ -129,37 +128,37 @@ export const workshops: Workshop[] = [
   {
     id: 'jooga',
     title: 'Jooga',
-    titleFi: 'Jooga – Keholle ja mielelle',
+    titleFi: 'Jooga',
     facilitator: 'Irina Attias',
     image: '/workshops/jooga-irina-attias.jpg',
     imageFit: 'cover',
     imagePosition: '50% 28%',
     description:
-      'Irina Attias on joogaopettaja ja yrittäjä, jolle jooga on fyysisen harjoituksen lisäksi ollut tärkeä itsetuntemuksen väline. Hän opettaa joogaa tällä hetkellä Vantaalla, Hämeenlinnassa ja Tampereella. Opettajana Irina on kiinnostunut erityisesti jokaisen yksilön oman kehon reaktiosta harjoitukseen. Irina on lempeä ohjaaja – auttaen oivaltamaan ja ymmärtämään hermoston toimintaa ja tilaa. Työpaja soveltuu kaiken ikäisille ja tasoisille!',
+      'on joogaopettaja ja yrittäjä, jolle jooga on fyysisen harjoituksen lisäksi ollut tärkeä itsetuntemuksen väline. Irina opettaa joogaa tällä hetkellä Vantaalla, Hämeenlinnassa ja Tampereella.\n\nOpettajana Irina on kiinnostunut erityisesti jokaisen yksilön oman kehon reaktiosta harjoitukseen.\n\nIrina on lempeä ohjaaja - auttaen oivaltamaan & ymmärtämään hermoston toimintaa ja tilaa.\n\nTyöpaja soveltuu kaiken ikäisille ja tasoisille!',
     icon: 'Wind',
   },
   {
     id: 'nyrkkeily',
     title: 'Nyrkkeily',
-    titleFi: 'Nyrkkeily – Voima & itsekuri',
+    titleFi: 'Nyrkkeily',
     facilitator: 'Janne Rantanen',
     image: '/workshops/janne-rantanen.jpg',
     imageFit: 'cover',
     imagePosition: '50% 22%',
     description:
-      'Janne Rantanen on entinen ammattinyrkkeilijä ja vapaaottelija, jolla on kaiken kaikkiaan 29 vuoden kokemus eri kamppailulajeista, mm. Sin moo hapkidosta, Brasilian jujutsusta, lukkopainista, vapaaottelusta sekä ammattinyrkkeilystä. Kilpailutaustaa näissä lajeissa 26 vuoden ajalta. Janne lopetti kilpauransa noin kolme vuotta sitten ja nykyään harjoittelee omaksi ilokseen sekä valmentaa muita. "Liike on lääke, sekä mielelle että kropalle." Työpajaan voit osallistua ilman aiempaa taustaa nyrkkeilystä!',
+      'on entinen ammattinyrkkeilijä ja vapaaottelija, jolla on kaiken kaikkiaan 29 vuoden kokemus eri kamppailulajeista, mm. Sin moo hapkidosta, Brasilian jujutsusta, lukkopainista, vapaaottelusta sekä ammattinyrkkeilystä.\n\nKilpailutaustaa näissä lajeissa 26 vuoden ajalta. Janne lopetti kilpauransa noin kolme vuotta sitten ja nykyään harjoittelee omaksi ilokseen, sekä valmentaa muita.\n\n"Liike on lääke, sekä mielelle että kropalle"\n\nTyöpajaan voit osallistua ilman aiempaa taustaa nyrkkeilystä!',
     icon: 'Zap',
   },
   {
     id: 'kamppailulajit',
     title: 'Kamppailulajit',
-    titleFi: 'Kamppailulajit – Thainyrkkeilytalli',
+    titleFi: 'Kamppailulajit',
     facilitator: 'Chitalada Finland',
     image: '/workshops/chitalada-finland.jpg',
     imageFit: 'contain',
     imageBg: 'bg-[#0f1a4d]',
     description:
-      'Chitalada Finland on perinteinen kamppailu-urheiluseura, joka on toiminut Tampereella yli 45 vuoden ajan. Seuran lajitarjontaan sisältyy Thainyrkkeily (Muaythai), potkunyrkkeily, Krav Maga (itsepuolustus). Työpajaan voit osallistua ilman aiempaa taustaa kamppailulajeista!',
+      'on perinteinen kamppailu-urheiluseura, joka on toiminut Tampereella yli 45 vuoden ajan. Seuran lajitarjontaan sisältyy Thainyrkkeily (Muaythai), potkunyrkkeily, Krav Maga (itsepuolustus).\n\nTyöpajaan voit osallistua ilman aiempaa taustaa kamppailulajeista!',
     icon: 'Shield',
   },
 ]
@@ -174,41 +173,11 @@ export const partners: Partner[] = [
     variant: 'light',
   },
   {
-    id: 'sj-saumaus',
-    name: 'SJ-Saumaus Oy',
-    image: '/partners/sj-saumaus.png',
-    alt: 'SJ-Saumaus Oy -logo',
-    variant: 'light',
-  },
-  {
-    id: 'chitalada-finland',
-    name: 'Chitalada Finland',
-    image: '/partners/chitalada-finland.jpg',
-    alt: 'Chitalada Finland -logo',
-    variant: 'light',
-  },
-  {
     id: 'fiksupinta',
     name: 'Fiksupinta',
     image: '/partners/fiksupinta.png',
     alt: 'Fiksupinta-logo',
     url: 'https://fiksupinta.fi/',
-    variant: 'light',
-  },
-  {
-    id: 'biletti',
-    name: 'Biletti.fi',
-    image: '/partners/biletti.png',
-    alt: 'Biletti.fi -logo',
-    url: 'https://biletti.fi',
-    variant: 'light',
-  },
-  {
-    id: 'nice-events',
-    name: 'Nice Events',
-    image: '/partners/nice-events.png',
-    alt: 'Nice Events -logo',
-    url: 'https://www.niceevents.fi',
     variant: 'light',
   },
 ]
@@ -226,7 +195,7 @@ export const faqItems: FaqItem[] = [
   {
     id: 'when-where',
     question: 'Missä ja milloin Wake Up fest järjestetään?',
-    answer: `Wake Up fest järjestetään 28.7.2026 tiistaina klo 15–22. Paikkana ${venue.nameEn} (${venue.nameFi}), ${venue.address}.`,
+    answer: `Wake Up fest järjestetään 28.7.2026 tiistaina klo 15–22. Paikkana ${venue.address}, Tampere.`,
   },
   {
     id: 'tickets',

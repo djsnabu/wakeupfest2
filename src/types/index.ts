@@ -36,7 +36,7 @@ export interface Workshop {
 
 export interface Partner {
   id: string
-  name: string
+  name?: string
   image: string
   alt: string
   url?: string

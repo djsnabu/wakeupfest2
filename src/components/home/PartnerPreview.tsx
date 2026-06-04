@@ -21,7 +21,7 @@ export default function PartnerPreview() {
         </div>
       </AnimatedSection>
 
-      <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2">
         {partners.map((partner, i) => {
           const isDark = partner.variant === 'dark'
           const card = (
@@ -41,13 +41,15 @@ export default function PartnerPreview() {
                   className="h-16 w-full max-w-[200px] object-contain sm:h-20"
                 />
               </div>
-              <p
-                className={`mt-2 shrink-0 text-center text-xs font-semibold leading-tight ${
-                  isDark ? 'text-gray-300' : 'text-gray-600'
-                }`}
-              >
-                {partner.name}
-              </p>
+              {partner.name ? (
+                <p
+                  className={`mt-2 shrink-0 text-center text-xs font-semibold leading-tight ${
+                    isDark ? 'text-gray-300' : 'text-gray-600'
+                  }`}
+                >
+                  {partner.name}
+                </p>
+              ) : null}
             </div>
           )
 

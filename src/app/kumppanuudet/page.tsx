@@ -54,7 +54,7 @@ export default function KumppanuudetPage() {
             }}
           >
             <p className="mx-auto max-w-2xl text-gray-600 leading-relaxed">
-              WakeUpfest 2026 järjestetään {venue.nameEn}issa ({venue.nameFi}), {venue.short} — hyväntekeväisyysfestivaali,
+              WakeUpfest 2026 järjestetään {venue.name}ssa, {venue.short} — hyväntekeväisyysfestivaali,
               jonka tavoitteena on lisätä tietoisuutta Suomen huumatilanteesta. Tapahtuma
               yhdistää puhujia, musiikkia ja workshopeja — täysin päihteettömänä, kaikille avoimena päivänä.
             </p>
@@ -92,7 +92,7 @@ export default function KumppanuudetPage() {
                 Yhteistyökumppanit
               </h3>
             </div>
-            <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 max-w-2xl mx-auto">
               {partners.map((partner) => {
                 const card = (
                   <div className="flex h-36 flex-col rounded-xl border border-gray-200 bg-gray-50 p-5 shadow-sm sm:h-40">
@@ -105,9 +105,11 @@ export default function KumppanuudetPage() {
                         className="h-16 w-full max-w-[200px] object-contain sm:h-20"
                       />
                     </div>
-                    <p className="mt-2 shrink-0 text-center text-xs font-semibold text-gray-600">
-                      {partner.name}
-                    </p>
+                    {partner.name ? (
+                      <p className="mt-2 shrink-0 text-center text-xs font-semibold text-gray-600">
+                        {partner.name}
+                      </p>
+                    ) : null}
                   </div>
                 )
 

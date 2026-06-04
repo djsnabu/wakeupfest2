@@ -9,13 +9,13 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Tapahtumainfo – WakeUpfest 2026',
-  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput Biletin kautta. ${venue.nameEn}, ${venue.address}.`,
+  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput Biletin kautta. ${venue.address}, Tampere.`,
 }
 
 const infoItems = [
   { icon: Calendar, label: 'Päivämäärä', value: '28.7.2026, tiistai', color: 'text-orange-700', bg: 'bg-orange-100' },
   { icon: Clock, label: 'Kellonaika', value: 'klo 15–22', color: 'text-yellow-700', bg: 'bg-yellow-100' },
-  { icon: MapPin, label: 'Sijainti', value: `${venue.nameEn} · ${venue.nameFi}`, color: 'text-pink-700', bg: 'bg-pink-100' },
+  { icon: MapPin, label: 'Sijainti', value: venue.address, color: 'text-pink-700', bg: 'bg-pink-100' },
   { icon: Ticket, label: 'Pääsy', value: 'Ikärajaton · Maksa mitä jaksat', color: 'text-green-700', bg: 'bg-green-100' },
   { icon: Wine, label: 'Tapahtuma', value: 'Päihteetön koko päivän', color: 'text-teal-700', bg: 'bg-teal-100' },
   { icon: Shield, label: 'Järjestys', value: 'Järjestyksenvalvonta tapahtuma-alueella', color: 'text-blue-700', bg: 'bg-blue-100' },
@@ -60,8 +60,7 @@ export default function TapahtumatiedotPage() {
               28.7.
             </p>
             <p className="mt-2 text-2xl font-semibold text-gray-900">tiistaina klo 15–22</p>
-            <p className="mt-4 text-lg font-semibold text-gray-900">{venue.nameEn}</p>
-            <p className="mt-1 text-base text-gray-600">{venue.address}</p>
+            <p className="mt-4 text-base text-gray-600">{venue.address}</p>
           </div>
         </AnimatedSection>
 
@@ -150,11 +149,10 @@ export default function TapahtumatiedotPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title={`WakeUpfest 2026 – ${venue.nameEn}, ${venue.address}`}
+              title={`WakeUpfest 2026 – ${venue.address}, Tampere`}
             />
           </div>
           <div className="mt-3 text-center text-sm text-gray-600">
-            <p className="font-semibold text-gray-900">{venue.nameEn}</p>
             <p>{venue.address}</p>
             <a
               href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.address)}`}

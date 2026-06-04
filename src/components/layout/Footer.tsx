@@ -34,7 +34,6 @@ export default function Footer() {
               Hyväntekeväisyysfestivaali Tampereella — päihteetön, ikärajaton.
             </p>
             <p className="mt-1 text-sm text-gray-600">28. heinäkuuta 2026 · {venue.short}</p>
-            <p className="mt-0.5 text-xs text-gray-500">{venue.nameEn}</p>
           </div>
 
           {/* Quick links */}

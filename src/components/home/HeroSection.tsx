@@ -53,12 +53,11 @@ export default function HeroSection() {
             28.7.
           </p>
           <p className="mt-2 text-lg font-semibold text-gray-900">tiistaina klo 15–22</p>
-          <p className="mt-3 text-base font-semibold text-gray-900">{venue.nameEn}</p>
-          <p className="mt-0.5 text-sm text-gray-600">{venue.address}</p>
+          <p className="mt-3 text-sm text-gray-600">{venue.address}</p>
         </Link>
 
         <p className="text-lg font-semibold leading-relaxed text-gray-900 md:text-xl">
-          Heinäkuussa {venue.nameEn}issa ({venue.nameFi}), Tampereella, järjestetään ennennäkemätön
+          Heinäkuussa {venue.name}ssa, Tampereella, järjestetään ennennäkemätön
           hyväntekeväisyystapahtuma, jonka tavoitteena on ennen kaikkea nostaa Suomen huumetilanne näkyväksi.
           Artisteja, puhujia & workshopeja.
         </p>
