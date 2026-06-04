@@ -92,7 +92,7 @@ export default function KumppanuudetPage() {
                 Yhteistyökumppanit
               </h3>
             </div>
-            <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {partners.map((partner) => {
                 const card = (
                   <div className="flex h-36 flex-col rounded-xl border border-gray-200 bg-gray-50 p-5 shadow-sm sm:h-40">

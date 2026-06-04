@@ -173,6 +173,12 @@ export const partners: Partner[] = [
     variant: 'light',
   },
   {
+    id: 'partner-round',
+    image: '/partners/partner-round.png',
+    alt: 'Yhteistyökumppanin logo',
+    variant: 'light',
+  },
+  {
     id: 'fiksupinta',
     name: 'Fiksupinta',
     image: '/partners/fiksupinta.png',
