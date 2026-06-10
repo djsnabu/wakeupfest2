@@ -8,10 +8,9 @@ export default function WorkshopPreview() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <AnimatedSection>
-        <p className="mx-auto mb-10 max-w-lg text-center text-base font-medium leading-snug text-gray-900 sm:max-w-2xl sm:text-lg md:text-xl">
+        <p className="mx-auto mb-10 max-w-lg text-center text-lg font-medium leading-snug text-gray-900">
           Tapahtumassa tarjolla monipuolisesti
-          <br className="sm:hidden" />
-          {' '}
+          <br />
           maksuttomia työpajoja –
           <br />
           et tarvitse aiempaa kokemusta!

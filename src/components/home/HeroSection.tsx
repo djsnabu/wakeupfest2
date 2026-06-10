@@ -58,7 +58,7 @@ export default function HeroSection() {
 
         <p
           lang="fi"
-          className="mx-auto max-w-lg hyphens-auto text-base font-semibold leading-snug text-gray-900 sm:text-lg md:text-xl"
+          className="mx-auto max-w-lg text-lg font-semibold leading-snug text-gray-900"
         >
           Heinäkuussa {venue.name}ssa, Tampereella,
           <br />
@@ -67,20 +67,17 @@ export default function HeroSection() {
           jonka tavoitteena on ennen kaikkea nostaa
           <br />
           Suomen huumetilanne näkyväksi.
-          <br />
-          <span className="mt-4 inline-block">Artisteja, puhujia & workshopeja.</span>
-          <br />
-          <span className="mt-5 inline-block">Tätä ei ole ennen nähty.</span>
-          <br />
+          <span className="mt-6 block">Artisteja, puhujia & workshopeja.</span>
+          <span className="mt-6 block">Tätä ei ole ennen nähty.</span>
           <span
-            className="gradient-text-primary mt-1 inline-block text-xl font-black sm:text-2xl md:text-3xl"
+            className="gradient-text-primary mt-6 block text-2xl font-black"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Tätä Suomi ei voi ohittaa!
           </span>
         </p>
 
-        <p className="mt-8 text-base leading-relaxed text-gray-600 md:text-lg">
+        <p className="mt-8 text-lg leading-snug text-gray-600">
           Seuraa somessa{' '}
           <a
             href={contacts.instagramUrl}
