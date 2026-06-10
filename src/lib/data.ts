@@ -33,6 +33,7 @@ export const speakers: Speaker[] = [
     name: 'Annuska Dal Maso',
     topic: 'Haittojen vähentäminen',
     image: '/speakers/annuska-dal-maso.jpg',
+    imagePosition: '72% 28%',
     description:
       'Annuska on haittojen vähentämisen ja huumepolitiikan uudistamisen puolestapuhuja. Hän käy rohkeaa ja tärkeää keskustelua päihdepolitiikasta ja huumeiden aiheuttamien haittojen ehkäisemisestä Suomessa.',
   },
@@ -50,7 +51,7 @@ export const speakers: Speaker[] = [
     name: 'Tuomo Kasanen "Veli Koo"',
     topic: 'Suomalainen miehuus & muutos',
     image: '/speakers/tuomo-kasanen.jpg',
-    imagePosition: '50% 18%',
+    imagePosition: '50% top',
     description:
       'Tuomo Kasanen, tunnettu nimellä Veli Koo, on suomalaisen miehuuden äänitorvi. Hän osoittaa omalla esimerkillään, kuinka haastavasta lähtökohdasta voi muuttua toisten inspiraatioksi.',
   },
@@ -101,6 +102,8 @@ export const artists: Artist[] = [
     origin: 'Tampere',
     genre: 'Indie Hip-Hop',
     image: '/artists/mansesteri.jpg',
+    imageFit: 'contain',
+    imageBg: 'bg-gray-900',
     description:
       'Tamperelainen indie hip-hop -yhtye, joka koostuu kokeneiden räppäreiden MC Manen ja Vainisin sekä DJ Kalun muodostamasta triosta. Yksi Suomen lahjakkaimmista omakustanneyhtyeistä.',
   },

@@ -16,6 +16,9 @@ export interface Artist {
   genre: string
   description: string
   image?: string
+  imageFit?: 'cover' | 'contain'
+  /** Tailwind bg class when imageFit is contain, e.g. bg-gray-900 */
+  imageBg?: string
   /** CSS object-position for portrait crops, e.g. "50% 30%" */
   imagePosition?: string
 }

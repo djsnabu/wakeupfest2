@@ -58,7 +58,7 @@ export default function HeroSection() {
 
         <p
           lang="fi"
-          className="mx-auto max-w-lg text-base font-semibold leading-snug text-gray-900 sm:text-lg md:text-xl"
+          className="mx-auto max-w-lg hyphens-auto text-base font-semibold leading-snug text-gray-900 sm:text-lg md:text-xl"
         >
           Heinäkuussa {venue.name}ssa, Tampereella,
           <br />

@@ -14,17 +14,31 @@ export default function ArtistCard({ artist, index }: { artist: Artist; index: n
     <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/40 hover:shadow-xl hover:shadow-purple-500/5">
       {/* Header */}
       <div
-        className={`relative aspect-square w-full bg-gradient-to-br ${headerGradients[index % headerGradients.length]}`}
+        className={`relative aspect-square w-full overflow-hidden ${
+          artist.imageFit === 'contain'
+            ? (artist.imageBg ?? 'bg-gray-900')
+            : `bg-gradient-to-br ${headerGradients[index % headerGradients.length]}`
+        }`}
       >
         {artist.image ? (
-          <Image
-            src={artist.image}
-            alt={artist.name}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover"
-            style={{ objectPosition: artist.imagePosition ?? '50% 30%' }}
-          />
+          artist.imageFit === 'contain' ? (
+            <Image
+              src={artist.image}
+              alt={artist.name}
+              width={480}
+              height={480}
+              className="h-full w-full object-contain p-2"
+            />
+          ) : (
+            <Image
+              src={artist.image}
+              alt={artist.name}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover"
+              style={{ objectPosition: artist.imagePosition ?? '50% 30%' }}
+            />
+          )
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
             <Music size={40} className="text-gray-600" />

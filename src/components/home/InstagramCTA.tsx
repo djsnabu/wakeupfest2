@@ -8,7 +8,7 @@ export default function InstagramCTA() {
     <section className="px-4 py-24 sm:px-6">
       <AnimatedSection>
         <div
-          className="mx-auto max-w-2xl rounded-3xl border border-gray-200 p-12 text-center"
+          className="mx-auto max-w-2xl rounded-3xl border border-gray-200 p-6 text-center sm:p-12"
           style={{
             background: 'linear-gradient(135deg, rgba(217,70,239,0.14), rgba(236,72,153,0.12))',
           }}
@@ -17,7 +17,7 @@ export default function InstagramCTA() {
             <InstagramIcon size={28} className="text-pink-700" />
           </div>
           <h2
-            className="mb-2 text-3xl font-bold text-gray-900"
+            className="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Seuraa meitä

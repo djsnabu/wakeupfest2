@@ -9,10 +9,13 @@ export default function ArtistPreview() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <AnimatedSection>
-        <p className="mx-auto mb-10 max-w-2xl text-center text-lg font-medium leading-relaxed text-gray-900 md:text-xl">
-          Artistikattauksemme koostuu nousevista
+        <p className="mx-auto mb-10 max-w-lg text-center text-base font-medium leading-snug text-gray-900 sm:max-w-2xl sm:text-lg md:text-xl">
+          Artistikattauksemme koostuu
+          <br className="sm:hidden" />
+          {' '}
+          nousevista tähdistä
           <br />
-          tähdistä ja musiikkialan ammattilaisista!
+          ja musiikkialan ammattilaisista!
         </p>
       </AnimatedSection>
 
@@ -20,16 +23,30 @@ export default function ArtistPreview() {
         {artists.map((artist, i) => (
           <AnimatedSection key={artist.id} delay={i * 0.1} className="h-full">
             <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/40">
-              <div className="relative aspect-square w-full">
+              <div
+                className={`relative aspect-square w-full overflow-hidden ${
+                  artist.imageFit === 'contain' ? (artist.imageBg ?? 'bg-gray-900') : ''
+                }`}
+              >
                 {artist.image ? (
-                  <Image
-                    src={artist.image}
-                    alt={artist.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                    style={{ objectPosition: artist.imagePosition ?? '50% 30%' }}
-                  />
+                  artist.imageFit === 'contain' ? (
+                    <Image
+                      src={artist.image}
+                      alt={artist.name}
+                      width={480}
+                      height={480}
+                      className="h-full w-full object-contain p-2"
+                    />
+                  ) : (
+                    <Image
+                      src={artist.image}
+                      alt={artist.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover"
+                      style={{ objectPosition: artist.imagePosition ?? '50% 30%' }}
+                    />
+                  )
                 ) : (
                   <div
                     className="absolute inset-0 flex items-center justify-center"
