@@ -12,6 +12,7 @@ export interface Speaker {
 export interface Artist {
   id: string
   name: string
+  handle?: string
   origin: string
   genre: string
   description: string
@@ -44,6 +45,8 @@ export interface Partner {
   alt: string
   url?: string
   variant?: 'dark' | 'light'
+  /** Optional Tailwind classes for logo sizing, e.g. "h-20 max-w-[240px]" */
+  imageClassName?: string
 }
 
 export interface NavLink {

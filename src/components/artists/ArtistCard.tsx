@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Music } from 'lucide-react'
 import type { Artist } from '@/types'
 import Badge from '@/components/ui/Badge'
+import SpeakerDescription from '@/components/speakers/SpeakerDescription'
 
 const headerGradients = [
   'from-purple-900/60 to-pink-900/60',
@@ -54,13 +55,27 @@ export default function ArtistCard({ artist, index }: { artist: Artist; index: n
         >
           {artist.name}
         </h3>
-        <p className="mt-1 min-h-4 text-xs text-gray-500">{artist.origin ?? ''}</p>
+        <div className="mt-1 min-h-4">
+          {artist.handle ? (
+            <a
+              href={`https://instagram.com/${artist.handle.replace('@', '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-teal-700 transition-colors hover:text-teal-800"
+            >
+              {artist.handle}
+            </a>
+          ) : (
+            <p className="text-xs text-gray-500">{artist.origin}</p>
+          )}
+        </div>
+        {artist.handle && artist.origin ? (
+          <p className="mt-0.5 text-xs text-gray-500">{artist.origin}</p>
+        ) : null}
         <div className="mt-3 flex min-h-[2.75rem] items-start">
           {artist.genre && <Badge variant="purple">{artist.genre}</Badge>}
         </div>
-        <p className="mt-4 line-clamp-4 min-h-[6.5rem] flex-1 text-sm leading-relaxed text-gray-600">
-          {artist.description}
-        </p>
+        <SpeakerDescription description={artist.description} />
       </div>
     </div>
   )

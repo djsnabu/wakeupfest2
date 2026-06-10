@@ -102,7 +102,10 @@ export default function KumppanuudetPage() {
                         alt={partner.alt}
                         width={360}
                         height={180}
-                        className="h-16 w-full max-w-[200px] object-contain sm:h-20"
+                        className={
+                          partner.imageClassName ??
+                          'h-16 w-full max-w-[200px] object-contain sm:h-20'
+                        }
                       />
                     </div>
                     {partner.name ? (

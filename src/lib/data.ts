@@ -35,7 +35,7 @@ export const speakers: Speaker[] = [
     image: '/speakers/annuska-dal-maso.jpg',
     imagePosition: '72% 28%',
     description:
-      'Annuska on haittojen vähentämisen ja huumepolitiikan uudistamisen puolestapuhuja. Hän käy rohkeaa ja tärkeää keskustelua päihdepolitiikasta ja huumeiden aiheuttamien haittojen ehkäisemisestä Suomessa.',
+      'Annuska on tuonut esiin laajasti näkemyksiään päihdepolitiikasta, huumeisiin liittyvien haittojen ehkäisemisestä ja sosiaalisen tuen merkityksestä, sekä ollut mm. edistämässä kansalaisaloitetta käyttöhuoneista.\n\nDal Manson kaunistelematon työ on saanut usein huomiota myös mediassa, eri artikkeleissa.',
   },
   {
     id: 'tomi',
@@ -44,7 +44,7 @@ export const speakers: Speaker[] = [
     image: '/speakers/tomi-langstedt.jpg',
     imagePosition: '50% 32%',
     description:
-      'Tomi Långstedtin omaelämäkerta "Vankina Thaimaassa" oli Suomen toiseksi myydyin kirja vuonna 2024. Hän joutui thaimaalaiseen vankilaan huumausaineiden hallussapidosta ja jakaa nyt tarinansa auttaakseen muita.',
+      'Tomi on mielenterveys- ja päihdealalla työskentelevä lähihoitaja, suora ja rehellinen puhuja – joka toivoo tarinansa kautta voivansa auttaa edes yhtä ihmistä välttämään rikollisen elämän.\n\nLångstedt jäi vuonna 2014 Thaimaassa kiinni huumausaineiden hallussapidosta ja istui vuosia maan pahamaineisissa vankiloissa.\n\nVankina Thaimaassa (WSOY, 2024) oli vuoden 2024 toiseksi myydyin kirja Suomessa.',
   },
   {
     id: 'tuomo',
@@ -53,7 +53,7 @@ export const speakers: Speaker[] = [
     image: '/speakers/tuomo-kasanen.jpg',
     imagePosition: '50% top',
     description:
-      'Tuomo Kasanen, tunnettu nimellä Veli Koo, on suomalaisen miehuuden äänitorvi. Hän osoittaa omalla esimerkillään, kuinka haastavasta lähtökohdasta voi muuttua toisten inspiraatioksi.',
+      'Tuomo "Veli Koo" Kasanen on suomalaisen miehuuden äänitorvi ja tabujen murskaamisen pioneeri. Kasanen on näyttänyt, että rosoinen katujätkä voi kasvaa elämässään täyteen potentiaaliin ja inspiroida muitakin matkalla muutokseen.',
   },
   {
     id: 'anna',
@@ -61,7 +61,7 @@ export const speakers: Speaker[] = [
     topic: 'Aito yhteys toisiin ihmisiin',
     image: '/speakers/anna-lindfors.jpg',
     description:
-      'Anna Lindfors on kansainvälinen psykologi ja seksuologi, joka tutkii ihmisten välistä yhteyttä hyvin erilaisissa ympäristöissä. Hän pohtii, miksi aito yhteys toiseen ihmiseen tuntuu nykypäivänä niin vaikealta.',
+      'Lindfors on kansainvälisesti tunnustettu psykologi ja seksologi, joka on tutkinut yhteyden ja erillisyyden biologiaa ääriolosuhteissa — Brasilian vankiloista San Franciscon tekoälyeliitin huippupiireihin ja Stanfordin lavoille. Ja joka paikassa hän on törmännyt samaan ilmiöön: ihmiset ovat mestareita suorittamaan elämää, mutta vieraantuneita siitä, mitä he oikeasti tarvitsevat.\n\nAnna puhuu siitä, mistä harvoin uskalletaan puhua ääneen: miksi aito yhteys toiseen ihmiseen tuntuu niin vaikealta, mitä digimaailma tekee hermostollemme ja kyvyllemme kohdata toinen — ja ennen kaikkea, miten muutos alkaa.\n\nLindfors ei jätä sinua pohtimaan ongelmaa — hän jättää sinut uskomaan, että ratkaisu on jo sinussa.',
   },
   {
     id: 'tomas',
@@ -70,7 +70,7 @@ export const speakers: Speaker[] = [
     image: '/speakers/tomas-jouhilampi.jpg',
     imagePosition: '50% 38%',
     description:
-      'Tomas Jouhilampi on sanoSTOPväkivallalle-liikkeen perustaja. Hän sai vakavan aivovamman 15-vuotiaana ja toimii nyt väkivallattomuuden puolesta kasvattajana ja vaikuttajana.',
+      'Tomas Jouhilammen tarina pysäyttää ja toimii esimerkkinä siitä, miten yksikin lyönti on liikaa.\n\nTomas oli vilkas lapsi – ja jo ala-asteella päihdeongelmainen. Hän hakeutui tappeluihin ja etsi konflikteja – pelkäämättä antaa osumaa saati ottaa sitä vastaan.\n\nOllessaan vasta 15-vuotias, Jouhilampi sai iskun, jota seurasi aivoverenvuoto, vaikea aivovamma ja toivottomat vuodet.\n\nNykyään Tomas puhuu väkivallattomuuden puolesta ja kiertää kertomassa tarinaansa kouluissa, yrityksissä ja tilaisuuksissa. Hän on myös sanoSTOPväkivallalle-liikkeen perustaja.',
   },
   {
     id: 'lucy',
@@ -99,13 +99,14 @@ export const artists: Artist[] = [
   {
     id: 'mansesteri',
     name: 'Mansesteri',
+    handle: '@mansesteriofficial',
     origin: 'Tampere',
     genre: 'Indie Hip-Hop',
     image: '/artists/mansesteri.jpg',
     imageFit: 'contain',
     imageBg: 'bg-gray-900',
     description:
-      'Tamperelainen indie hip-hop -yhtye, joka koostuu kokeneiden räppäreiden MC Manen ja Vainisin sekä DJ Kalun muodostamasta triosta. Yksi Suomen lahjakkaimmista omakustanneyhtyeistä.',
+      'Voiko olla tapahtumaa Tampereella ilman Mansesteria, eli tamperelaista – täysin itsenäistä hip-hop-yhtyettä?\n\nKonkariräppärit Mc Mane ja Vainis, sekä heidän virallinen keikka-DJ DJ Kalu tuovat vuosi toisensa jälkeen faneilleen uutta herkuteltavaa ja tie yhdeksi maamme kirkkaimmista omakustanneartisteista on ollut lähes tauottoman nousujohteista.',
   },
   {
     id: 'nupe',
@@ -114,7 +115,7 @@ export const artists: Artist[] = [
     genre: 'Hip-Hop / Melodinen räp',
     image: '/artists/nupe.jpg',
     description:
-      'Nouseva helsinkiläisartisti, jonka melodinen sound ja vahvat räppi-verseet ovat voittaneet faneja koko Suomessa. Tunnetaan tarttuvista kertosäkeistä ja tunteikkaasta ilmaisusta.',
+      'Nupe on helsinkiläinen nouseva tähti, joka yhdistää melodisen soundin ja vahvat räppiverset. Kappaleissa korostuu tarttuvat kertosäkeet, vahva tunneilmaisu ja taitava dynamiikan hallinta, jotka nostavat hänet esille nykyräpin joukosta.\n\nNupe nousi laajempaan suosioon erityisesti kappaleillaan, jotka käsittelevät elämää Helsingin itäisissä kaupunginosissa.\n\n"Tunteeton" on yksi artistin striimatuimmista teoksista.',
   },
   {
     id: 'roman',
@@ -124,7 +125,17 @@ export const artists: Artist[] = [
     image: '/artists/roman-aliev.jpg',
     imagePosition: '50% 22%',
     description:
-      'Roman Aliev julkaisee suomen- ja venäjänkielistä poppia. Vuoden 2025 kappale "Milaja Moja" nousi suureen suosioon. Hän on myös aktiivinen TikTok- ja Instagram-vaikuttaja.',
+      'Roman on nouseva artisti, joka julkaisee suomen- ja venäjänkielistä poppia, joista 2025 julkaistu "Milaja Moja" on saavuttanut huomattavaa suosiota.\n\nHän on myös somevaikuttaja & sisällöntuottaja – joka on aktiivinen etenkin TikTokissa ja Instagramissa.\n\nAliev on erityisesti nuorten suosiossa – tuottaen energistä, positiivista ja helposti lähestyttävää sisältöä.',
+  },
+  {
+    id: 'lucy',
+    name: 'Lucy Kautto',
+    handle: '@naziawanjiru',
+    origin: 'Suomi',
+    genre: 'Tarinankertoja & artisti',
+    image: '/speakers/lucy.jpg',
+    description:
+      'Lucy on tarinankertoja, artisti ja kokemusasiantuntija – joka toimii ammattilaisena lastensuojelun parissa.\n\nLucy yhdistää musiikin ja puheen vahvaksi tarinalliseksi kokonaisuudeksi, jossa käsitellään mm. lastensuojelua, rikoksia, päihteitä ja ihmismieltä. Hän avaa vaikeita teemoja, kuten narsismia, psykopatiaa ja yliseksuaalisuutta – rehellisesti, mutta nuorille ymmärrettävällä tavalla.\n\nLucyn tarina on sensuroimaton kuvaus elämästä, mutta samalla kertomus kuntoutumisesta, kasvusta ja suunnan muuttamisesta. Lucy elää nykyään päihteetöntä elämää ja tuo sekä omakohtaisen että ammatillisen näkökulmansa työhönsä nuorten kanssa. Tämä esitys herättää ajatuksia, tunteita ja keskustelua – ja ennen kaikkea näyttää muutoksen olevan mahdollista.',
   },
 ]
 
@@ -177,10 +188,13 @@ export const partners: Partner[] = [
     variant: 'light',
   },
   {
-    id: 'partner-round',
+    id: 'helmi-metsa',
+    name: 'Helmi Metsä',
     image: '/partners/partner-round.png',
-    alt: 'Yhteistyökumppanin logo',
+    alt: 'Helmi Metsä -logo',
+    url: 'https://www.helmimetsa.fi/',
     variant: 'light',
+    imageClassName: 'h-20 w-full max-w-[240px] object-contain sm:h-24',
   },
   {
     id: 'fiksupinta',
