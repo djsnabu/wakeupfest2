@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import { Mail, Heart, Eye, Users } from 'lucide-react'
-import { contacts, partners, venue } from '@/lib/data'
+import { contacts, partners } from '@/lib/data'
 import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
@@ -54,9 +54,9 @@ export default function KumppanuudetPage() {
             }}
           >
             <p className="mx-auto max-w-2xl text-gray-600 leading-relaxed">
-              WakeUpfest 2026 järjestetään {venue.name}ssa, {venue.short} — hyväntekeväisyysfestivaali,
-              jonka tavoitteena on lisätä tietoisuutta Suomen huumatilanteesta. Tapahtuma
-              yhdistää puhujia, musiikkia ja workshopeja — täysin päihteettömänä, kaikille avoimena päivänä.
+              Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä, josta ei makseta
+              rahallista korvausta tai palkkaa. Mikäli olet halukas tekemään kanssamme yhteistyötä,
+              kysy kumppanuuksista lisää:
             </p>
           </div>
         </AnimatedSection>
@@ -137,11 +137,6 @@ export default function KumppanuudetPage() {
         {/* Contact */}
         <AnimatedSection delay={0.3}>
           <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8">
-            <p className="mx-auto mb-8 max-w-2xl text-center text-sm leading-relaxed text-gray-600">
-              Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä, josta ei makseta
-              rahallista korvausta tai palkkaa. Mikäli olet halukas tekemään kanssamme yhteistyötä,
-              kysy kumppanuuksista lisää:
-            </p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[contacts.tiina, contacts.jonna].map((c) => (
                 <a
