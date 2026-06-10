@@ -50,6 +50,7 @@ export const speakers: Speaker[] = [
     name: 'Tuomo Kasanen "Veli Koo"',
     topic: 'Suomalainen miehuus & muutos',
     image: '/speakers/tuomo-kasanen.jpg',
+    imagePosition: '50% 18%',
     description:
       'Tuomo Kasanen, tunnettu nimellä Veli Koo, on suomalaisen miehuuden äänitorvi. Hän osoittaa omalla esimerkillään, kuinka haastavasta lähtökohdasta voi muuttua toisten inspiraatioksi.',
   },

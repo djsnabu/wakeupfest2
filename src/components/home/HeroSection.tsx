@@ -56,17 +56,31 @@ export default function HeroSection() {
           <p className="mt-3 text-sm text-gray-600">{venue.address}</p>
         </Link>
 
-        <p className="text-lg font-semibold leading-relaxed text-gray-900 md:text-xl">
-          Heinäkuussa {venue.name}ssa, Tampereella, järjestetään ennennäkemätön
-          hyväntekeväisyystapahtuma, jonka tavoitteena on ennen kaikkea nostaa Suomen huumetilanne näkyväksi.
-          Artisteja, puhujia & workshopeja.
+        <p
+          lang="fi"
+          className="mx-auto max-w-lg text-base font-semibold leading-snug text-gray-900 sm:text-lg md:text-xl"
+        >
+          Heinäkuussa {venue.name}ssa, Tampereella,
+          <br />
+          järjestetään ennennäkemätön hyväntekeväisyystapahtuma,
+          <br />
+          jonka tavoitteena on ennen kaikkea nostaa
+          <br />
+          Suomen huumetilanne näkyväksi.
+          <br />
+          <span className="mt-4 inline-block">Artisteja, puhujia & workshopeja.</span>
+          <br />
+          <span className="mt-5 inline-block">Tätä ei ole ennen nähty.</span>
+          <br />
+          <span
+            className="gradient-text-primary mt-1 inline-block text-xl font-black sm:text-2xl md:text-3xl"
+            style={{ fontFamily: 'var(--font-display)' }}
+          >
+            Tätä Suomi ei voi ohittaa!
+          </span>
         </p>
 
-        <p className="mt-6 text-lg font-semibold leading-relaxed text-gray-900 md:text-xl">
-          Tätä ei ole ennen nähty. Tätä Suomi ei voi ohittaa!
-        </p>
-
-        <p className="mt-6 text-base leading-relaxed text-gray-600 md:text-lg">
+        <p className="mt-8 text-base leading-relaxed text-gray-600 md:text-lg">
           Seuraa somessa{' '}
           <a
             href={contacts.instagramUrl}
