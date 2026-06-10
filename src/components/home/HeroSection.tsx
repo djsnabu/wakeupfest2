@@ -60,9 +60,11 @@ export default function HeroSection() {
           lang="fi"
           className="mx-auto max-w-lg text-lg font-semibold leading-snug text-gray-900"
         >
-          Heinäkuussa {venue.name}ssa, Tampereella,
+          Heinäkuussa Tampereen {venue.name}ssa
           <br />
-          järjestetään ennennäkemätön hyväntekeväisyystapahtuma,
+          Järjestetään ennennäkemätön
+          <br />
+          hyväntekeväisyystapahtuma,
           <br />
           jonka tavoitteena on ennen kaikkea nostaa
           <br />
