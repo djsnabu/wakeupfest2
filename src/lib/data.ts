@@ -189,9 +189,9 @@ export const partners: Partner[] = [
   },
   {
     id: 'helmi-metsa',
-    name: 'Helmi Metsä',
+    name: 'Helmimetsä',
     image: '/partners/partner-round.png',
-    alt: 'Helmi Metsä -logo',
+    alt: 'Helmimetsä-logo',
     url: 'https://www.helmimetsa.fi/',
     variant: 'light',
     imageClassName: 'h-20 w-full max-w-[240px] object-contain sm:h-24',

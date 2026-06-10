@@ -60,8 +60,9 @@ export default function VapaaehtoistoimintaPage() {
             <p className="mx-auto max-w-2xl text-gray-600 leading-relaxed">
               Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä, josta ei makseta
               rahallista korvausta tai palkkaa. Talkooväelle on kuitenkin aina tarvetta, joten kerro
-              meille osaamisestasi tai mielenkiinnonkohteistasi, tai jos haluat esimerkiksi toteuttaa
-              tapahtumassa oman pop up-pisteen.
+              meille osaamisestasi tai mielenkiinnonkohteistasi,
+              <br />
+              tai jos haluat esimerkiksi toteuttaa tapahtumassa oman pop up-pisteen.
             </p>
           </div>
         </AnimatedSection>
