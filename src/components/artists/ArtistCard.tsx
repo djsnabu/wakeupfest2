@@ -58,7 +58,10 @@ export default function ArtistCard({ artist, index }: { artist: Artist; index: n
         <div className="mt-1 min-h-4">
           {artist.handle ? (
             <a
-              href={`https://instagram.com/${artist.handle.replace('@', '')}`}
+              href={
+                artist.profileUrl ??
+                `https://instagram.com/${artist.handle.replace('@', '')}`
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-teal-700 transition-colors hover:text-teal-800"
@@ -76,6 +79,21 @@ export default function ArtistCard({ artist, index }: { artist: Artist; index: n
           {artist.genre && <Badge variant="purple">{artist.genre}</Badge>}
         </div>
         <SpeakerDescription description={artist.description} />
+        {artist.links && artist.links.length > 0 ? (
+          <div className="mt-3 flex flex-wrap gap-2">
+            {artist.links.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-semibold text-purple-700 underline-offset-2 hover:text-purple-800 hover:underline"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   )

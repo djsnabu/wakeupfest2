@@ -9,10 +9,18 @@ export interface Speaker {
   imagePosition?: string
 }
 
+export interface ArtistLink {
+  label: string
+  url: string
+}
+
 export interface Artist {
   id: string
   name: string
   handle?: string
+  /** Override default Instagram URL for handle, e.g. link-in-bio page */
+  profileUrl?: string
+  links?: ArtistLink[]
   origin: string
   genre: string
   description: string

@@ -137,6 +137,25 @@ export const artists: Artist[] = [
     description:
       'Lucy on tarinankertoja, artisti ja kokemusasiantuntija – joka toimii ammattilaisena lastensuojelun parissa.\n\nLucy yhdistää musiikin ja puheen vahvaksi tarinalliseksi kokonaisuudeksi, jossa käsitellään mm. lastensuojelua, rikoksia, päihteitä ja ihmismieltä. Hän avaa vaikeita teemoja, kuten narsismia, psykopatiaa ja yliseksuaalisuutta – rehellisesti, mutta nuorille ymmärrettävällä tavalla.\n\nLucyn tarina on sensuroimaton kuvaus elämästä, mutta samalla kertomus kuntoutumisesta, kasvusta ja suunnan muuttamisesta. Lucy elää nykyään päihteetöntä elämää ja tuo sekä omakohtaisen että ammatillisen näkökulmansa työhönsä nuorten kanssa. Tämä esitys herättää ajatuksia, tunteita ja keskustelua – ja ennen kaikkea näyttää muutoksen olevan mahdollista.',
   },
+  {
+    id: 'pike',
+    name: 'DJ Justin Case / PIKE',
+    handle: '@justpikee',
+    profileUrl: 'https://lnk.bio/justpikee',
+    origin: 'Sin City',
+    genre: 'DJ & hybridiesitys',
+    image: '/artists/pike.png',
+    imagePosition: '72% 40%',
+    description:
+      'DJ Justin Case / PIKE on Sin Citystä tuttu DJ- ja esiintyjähahmo, joka tuo WakeUp Festiin DJ-vetoisen hybridiesityksen. Show rakentuu DJ-setin ympärille: mukana on klubienergiaa, omaa materiaalia, hostausta ja yleisön kanssa hetkessä elävää energiaa.\n\nYli 15 vuoden lavakokemus klubeilta, festareilta ja tapahtumista näkyy tavassa lukea yleisöä ja pitää ilta liikkeessä. Pike tunnetaan energisestä ja yleisön mukana elävästä keikkaotteesta: setti rakentuu yleisön kanssa. PIKE-artistipuoli tuo kokonaisuuteen oman äänen, omaa musiikkia ja suomenkielisen popin tarttumapinnan.\n\nKaikki sosiaalisen median kanavat löytyvät tunnisteella @justpikee.',
+    links: [
+      { label: 'Instagram', url: 'https://www.instagram.com/justpikee/' },
+      { label: 'TikTok', url: 'https://www.tiktok.com/@justpikee' },
+      { label: 'YouTube', url: 'https://www.youtube.com/@justpikee' },
+      { label: 'Spotify', url: 'https://open.spotify.com/track/0uLSHFf36s9wUKA1yRY82H' },
+      { label: 'Kaikki linkit', url: 'https://lnk.bio/justpikee' },
+    ],
+  },
 ]
 
 export const workshops: Workshop[] = [

@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { venue } from '@/lib/data'
+import { siteUrl } from '@/lib/site'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,11 +20,14 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'WakeUpfest 2026',
   description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput. ${venue.address}, Tampere.`,
   openGraph: {
     title: 'WakeUpfest 2026',
     description: `28.7.2026 klo 15–22 · ${venue.name}, Tampere. Hyväntekeväisyystapahtuma — seuraa @wakeupfest_finland.`,
+    url: siteUrl,
+    siteName: 'WakeUpfest',
     locale: 'fi_FI',
     type: 'website',
   },
