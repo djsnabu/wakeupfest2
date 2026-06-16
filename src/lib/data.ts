@@ -107,7 +107,7 @@ export const artists: Artist[] = [
     imageFit: 'cover',
     imagePosition: '50% 20%',
     description:
-      'Someilmiöksi noussut Bilerumpali saapuu Wake up festeille! Nyt olisikin tarjolla perinteisen DJ:n sijaan jotain kovempaa: BILERUMPALI – Armottomien bilettäjien märkä päiväuni.\\n\\nParin vuoden ajan yksityistilaisuuksissa huippuunsa hiottu konsepti kiertää livekeikoilla Suomen suvessa. Bilerumpali tekee keikasta elämyksen, jota et unohda. Kiihkeä liverummutus, käsittämätön groove ja tarttuvat hittibiisit.\\n\\nKaikki tämä yhdessä karismaattisen esiintymisen ja eläimellisen energian kanssa iskee niin, että yleisö laulaa, reivaa ja tanssii täysillä.\\n\\nOhjelmisto koostuu moderneista hiteistä ja rakastetuimmista klassikoista. Setissä soi sopivassa suhteessa pop, rap ja rock, jotta jokainen löytää tiensä tanssilattialle. Keikkaan sisältyy myös osio, jossa yleisö pääsee toivomaan Bilerumpalilta biisejä. Edes artisti itse ei voi tietää, mitä tuleman pitää.\\n\\nSomessa Bilerumpalin videot ovat keränneet parhaimmillaan yli miljoonaa näyttökertaa.',
+      'Someilmiöksi noussut Bilerumpali saapuu Wake up festeille! Nyt olisikin tarjolla perinteisen DJ:n sijaan jotain kovempaa: BILERUMPALI – Armottomien bilettäjien märkä päiväuni.\n\nParin vuoden ajan yksityistilaisuuksissa huippuunsa hiottu konsepti kiertää livekeikoilla Suomen suvessa. Bilerumpali tekee keikasta elämyksen, jota et unohda. Kiihkeä liverummutus, käsittämätön groove ja tarttuvat hittibiisit.\n\nKaikki tämä yhdessä karismaattisen esiintymisen ja eläimellisen energian kanssa iskee niin, että yleisö laulaa, reivaa ja tanssii täysillä.\n\nOhjelmisto koostuu moderneista hiteistä ja rakastetuimmista klassikoista. Setissä soi sopivassa suhteessa pop, rap ja rock, jotta jokainen löytää tiensä tanssilattialle. Keikkaan sisältyy myös osio, jossa yleisö pääsee toivomaan Bilerumpalilta biisejä. Edes artisti itse ei voi tietää, mitä tuleman pitää.\n\nSomessa Bilerumpalin videot ovat keränneet parhaimmillaan yli miljoonaa näyttökertaa.',
     links: [
       { label: 'Instagram', url: 'https://www.instagram.com/bilerumpali/' },
     ],
@@ -247,6 +247,24 @@ export const partners: Partner[] = [
     url: 'https://www.tonokahvila.com/',
     variant: 'light',
     imageClassName: 'h-20 w-full max-w-[200px] object-contain sm:h-24',
+  },
+  {
+    id: 'biletti',
+    name: 'Biletti.fi',
+    image: '/partners/biletti.png',
+    alt: 'Biletti.fi -logo',
+    url: 'https://biletti.fi/',
+    variant: 'light',
+    imageClassName: 'h-12 w-full max-w-[160px] object-contain sm:h-16',
+  },
+  {
+    id: 'niceevents',
+    name: 'Nice Events',
+    image: '/partners/niceevents.png',
+    alt: 'Nice Events -logo',
+    url: 'https://niceevents.fi/',
+    variant: 'light',
+    imageClassName: 'h-12 w-full max-w-[200px] object-contain sm:h-16',
   },
 ]
 

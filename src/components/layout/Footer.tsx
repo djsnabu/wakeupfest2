@@ -96,6 +96,15 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-gray-100 pt-6 text-center text-xs text-gray-700">
           © 2026 WakeUpfest. Tapahtuma järjestetään kokonaisuudessaan hyväntekeväisyytenä.
+          <span className="ml-2 text-gray-400">·</span>{' '}
+          <a
+            href="https://niceevents.fi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-900 transition-colors"
+          >
+            Website by niceevents.fi
+          </a>
         </div>
       </div>
     </footer>
