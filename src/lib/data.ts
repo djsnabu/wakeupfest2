@@ -223,6 +223,15 @@ export const partners: Partner[] = [
     url: 'https://fiksupinta.fi/',
     variant: 'light',
   },
+  {
+    id: 'tonokahvila',
+    name: 'Tönökahvila',
+    image: '/partners/tonokahvila.png',
+    alt: 'Tönökahvila Cafe & Bar -logo',
+    url: 'https://www.tonokahvila.com/',
+    variant: 'light',
+    imageClassName: 'h-20 w-full max-w-[200px] object-contain sm:h-24',
+  },
 ]
 
 export const prohibitedItems = [
