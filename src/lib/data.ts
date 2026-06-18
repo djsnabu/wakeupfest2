@@ -266,6 +266,15 @@ export const partners: Partner[] = [
     variant: 'light',
     imageClassName: 'h-12 w-full max-w-[200px] object-contain sm:h-16',
   },
+  {
+    id: 'jpj-palvelut',
+    name: 'JPJ Palvelut',
+    image: '/partners/jpj-palvelut.png',
+    alt: 'JPJ Palvelut -logo',
+    url: 'https://jpjpalvelut.com/',
+    variant: 'light',
+    imageClassName: 'h-12 w-full max-w-[160px] object-contain sm:h-16',
+  },
 ]
 
 export const prohibitedItems = [
