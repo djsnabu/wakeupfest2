@@ -208,7 +208,7 @@ export const workshops: Workshop[] = [
     imageFit: 'contain',
     imageBg: 'bg-[#0f1a4d]',
     description:
-      'on perinteinen kamppailu-urheiluseura, joka on toiminut Tampereella yli 45 vuoden ajan. Seuran lajitarjontaan sisältyy Thainyrkkeily (Muaythai), potkunyrkkeily, Krav Maga (itsepuolustus).\n\nTyöpajaan voit osallistua ilman aiempaa taustaa kamppailulajeista!',
+      'on perinteinen tamperelainen kamppailu-urheiluseura, joka on toiminut menestyksekkäästi jo yli 48 vuoden ajan.\n\nSeuran lajitarjontaan sisältyy thainyrkkeily (Muaythai), potkunyrkkeily, Krav Maga (itsepuolustus), Naisten Kuntothai ja Junnuthai.\n\nChitalada Finland on tunnettu laadukkaasta sekä monipuolisesta opetuksesta ja harjoittelusta.\n\nSeuran kilpailijat ovat voittaneet sekä amatööreissä että ammattilaisissa mm. useita maailmanmestaruuksia, Euroopan mestaruuksia, Pohjoismaiden mestaruuksia ja Suomen mestaruuksia. Lisäksi myös mm. Thaimaan stadionien mestaruuksia ja World Combat Games -kultaa.\n\nSuurin osa seuran harrastajista on mukana kuitenkin pelkästään kuntoilumielellä, ja harjoittelu sopiikin erinomaisesti kaikille ikään ja sukupuoleen katsomatta.\n\nAmmattitaitoinen opetus takaa jokaiselle harrastajalle turvallisen ja mukavan harjoittelun!\n\nLisätiedot: www.chitalada.com\n\nTyöpajaan voit osallistua ilman aiempaa taustaa kamppailulajeista!',
     icon: 'Shield',
   },
 ]
