@@ -175,7 +175,7 @@ export const artists: Artist[] = [
   {
     id: 'sampo-joenvuori',
     name: 'Sampo Joenvuori',
-    origin: 'Mukana myös',
+    origin: '',
     genre: 'Improtanssi / katutanssi',
     image: '/artists/sampo-joenvuori.png',
     imageFit: 'cover',

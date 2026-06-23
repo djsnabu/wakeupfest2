@@ -14,7 +14,7 @@ export default function ArtistPreview() {
           <br />
           nousevista tähdistä
           <br />
-          ja mukana olevista esiintyjistä!
+          ja musiikin, tanssin sekä puheen tekijöistä!
         </p>
       </AnimatedSection>
 

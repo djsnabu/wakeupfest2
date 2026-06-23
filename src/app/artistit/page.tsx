@@ -7,7 +7,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 export const metadata: Metadata = {
   title: 'Esiintyjät – WakeUpfest 2026',
   description:
-    'Esiintyjäkattauksemme koostuu nousevista tähdistä, musiikkialan ammattilaisista ja mukana olevista esiintyjistä! WakeUpfest 2026, Tampere.',
+    'Esiintyjäkattauksemme koostuu nousevista tähdistä sekä musiikin, tanssin ja puheen esiintyjistä! WakeUpfest 2026, Tampere.',
 }
 
 export default function ArtistPage() {
@@ -17,7 +17,7 @@ export default function ArtistPage() {
         <AnimatedSection>
           <SectionHeading
             title="Esiintyjät"
-            subtitle="Esiintyjäkattauksemme koostuu nousevista tähdistä, musiikkialan ammattilaisista ja mukana olevista esiintyjistä!"
+            subtitle="Esiintyjäkattauksemme koostuu nousevista tähdistä sekä musiikin, tanssin ja puheen esiintyjistä!"
           />
         </AnimatedSection>
 
