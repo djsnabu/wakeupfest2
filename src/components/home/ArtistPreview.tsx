@@ -10,11 +10,11 @@ export default function ArtistPreview() {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <AnimatedSection>
         <p className="mx-auto mb-10 max-w-lg text-center text-lg font-medium leading-snug text-gray-900">
-          Artistikattauksemme koostuu
+          Esiintyjäkattauksemme koostuu
           <br />
           nousevista tähdistä
           <br />
-          ja musiikkialan ammattilaisista!
+          ja mukana olevista esiintyjistä!
         </p>
       </AnimatedSection>
 
@@ -82,7 +82,7 @@ export default function ArtistPreview() {
           href="/artistit"
           className="inline-flex items-center gap-2 text-sm font-semibold text-purple-700 hover:text-purple-800 transition-colors"
         >
-          Tutustu artisteihin
+          Tutustu esiintyjiin
           <ArrowRight size={16} aria-hidden />
         </Link>
       </div>

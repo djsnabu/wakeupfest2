@@ -69,7 +69,7 @@ export default function HeroSection() {
           jonka tavoitteena on ennen kaikkea nostaa
           <br />
           Suomen huumetilanne näkyväksi.
-          <span className="mt-6 block">Artisteja, puhujia & workshopeja.</span>
+          <span className="mt-6 block">Esiintyjiä, puhujia & workshopeja.</span>
           <span className="mt-6 block">Tätä ei ole ennen nähty.</span>
           <span
             className="gradient-text-primary mt-6 block text-2xl font-black"
@@ -99,7 +99,7 @@ export default function HeroSection() {
             Tutustu puhujiin
           </GradientButton>
           <GradientButton href="/artistit" variant="outline">
-            Tutustu artisteihin
+            Tutustu esiintyjiin
           </GradientButton>
           <GradientButton href="/workshopit" variant="outline">
             Workshopit

@@ -19,7 +19,7 @@ export const venue = {
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Etusivu' },
   { href: '/puhujat', label: 'Puhujat' },
-  { href: '/artistit', label: 'Artistit' },
+  { href: '/artistit', label: 'Esiintyjät' },
   { href: '/workshopit', label: 'Workshopit' },
   { href: '/tapahtumatiedot', label: 'Tapahtumainfo' },
   { href: '/kumppanuudet', label: 'Yhteistyökumppanuus' },
@@ -171,6 +171,20 @@ export const artists: Artist[] = [
       { label: 'Spotify', url: 'https://open.spotify.com/track/0uLSHFf36s9wUKA1yRY82H' },
       { label: 'Kaikki linkit', url: 'https://lnk.bio/justpikee' },
     ],
+  },
+  {
+    id: 'sampo-joenvuori',
+    name: 'Sampo Joenvuori',
+    origin: 'Mukana myös',
+    genre: 'Improtanssi / katutanssi',
+    image: '/artists/sampo-joenvuori.png',
+    imageFit: 'cover',
+    imagePosition: '50% 50%',
+    description: `Sampo Joenvuori on ainutlaatuinen improtanssija, joka tuo tapahtuma-alueelle vahvaa läsnäoloa, tunnetta ja hetkessä syntyvää liikettä. Hänen erikoisosaamisensa on tanssia täysin vapaasti – mihin tahansa musiikkiin, tunnelmaan tai teemaan mukautuen.
+
+WakeUp Festissä Sampo tanssii yleisesti alueella ja pitää rentoa workshop-henkistä tekemistä – ei virallisena workshopina, vaan vapaana kohtaamisena liikkeen kautta.
+
+Jokainen esitys on uniikki. Sampo ei toista valmiita koreografioita, vaan luo liikkeen suoraan hetkestä, musiikista ja yleisön energiasta. Tämä tekee esityksistä eläviä, koskettavia ja unohtumattomia.`,
   },
 ]
 

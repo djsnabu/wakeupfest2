@@ -23,7 +23,7 @@ export default function InstagramCTA() {
             Seuraa meitä
           </h2>
           <p className="mb-6 text-gray-600">
-            Uusimmat uutiset, artistijulkistukset ja tapahtumapäivitykset Instagramissa.
+            Uusimmat uutiset, esiintyjäjulkistukset ja tapahtumapäivitykset Instagramissa.
           </p>
           <p className="mb-8 text-xl font-bold text-pink-600">{contacts.instagram}</p>
           <GradientButton href={contacts.instagramUrl} variant="secondary" external>

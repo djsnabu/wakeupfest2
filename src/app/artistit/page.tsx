@@ -5,9 +5,9 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
-  title: 'Artistit – WakeUpfest 2026',
+  title: 'Esiintyjät – WakeUpfest 2026',
   description:
-    'Artistikattauksemme koostuu nousevista tähdistä ja musiikkialan ammattilaisista! WakeUpfest 2026, Tampere.',
+    'Esiintyjäkattauksemme koostuu nousevista tähdistä, musiikkialan ammattilaisista ja mukana olevista esiintyjistä! WakeUpfest 2026, Tampere.',
 }
 
 export default function ArtistPage() {
@@ -16,8 +16,8 @@ export default function ArtistPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <AnimatedSection>
           <SectionHeading
-            title="Artistit"
-            subtitle="Artistikattauksemme koostuu nousevista tähdistä ja musiikkialan ammattilaisista!"
+            title="Esiintyjät"
+            subtitle="Esiintyjäkattauksemme koostuu nousevista tähdistä, musiikkialan ammattilaisista ja mukana olevista esiintyjistä!"
           />
         </AnimatedSection>
 
