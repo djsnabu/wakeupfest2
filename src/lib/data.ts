@@ -134,6 +134,22 @@ export const artists: Artist[] = [
       'Nupe on helsinkiläinen nouseva tähti, joka yhdistää melodisen soundin ja vahvat räppiverset. Kappaleissa korostuu tarttuvat kertosäkeet, vahva tunneilmaisu ja taitava dynamiikan hallinta, jotka nostavat hänet esille nykyräpin joukosta.\n\nNupe nousi laajempaan suosioon erityisesti kappaleillaan, jotka käsittelevät elämää Helsingin itäisissä kaupunginosissa.\n\n"Tunteeton" on yksi artistin striimatuimmista teoksista.',
   },
   {
+    id: 'gold-t',
+    name: 'Gold T',
+    origin: 'Tampere / Akaa',
+    genre: 'Melodinen trap / rap',
+    image: '/artists/gold-t.jpg',
+    imageFit: 'cover',
+    imagePosition: '50% 50%',
+    description: `Gold T on Tampereelta ja Akaasta ponnistanut artisti, jonka soundi liikkuu melodisen trapin ja rapin rajapinnalla. Tummasävytteistä, latautunutta musiikkia, jolla on selkeä suunta.
+
+Tampere nostaa päätään suomalaisella musiikkikentällä ja Gold T on osa sitä aaltoa. Hän kääntää musiikissaan selkänsä sille väkivalta- ja huumekuvaston ihannoinnille, johon räpissä usein nojataan.
+
+Juuri julkaistu Level Up EP on esimerkki siitä, mitä tason nostaminen hänelle tarkoittaa: millaisissa pöydissä istut ja millaisen puheen äärellä. Artisti on todennut: “Olen huomannut, että kyllä se on aika pirunmoinen level up olla puhumassa omasta tai kavereiden liiketoiminnasta kuin istua pöydässä missä jauhetaan paljonko pussiin laitetaan tai kuka on kuollut tai saanut turpaansa.”
+
+Gold T:n kappaleet ammentavat aidoista elämäntarinoista ja livenä niiden energia kasvaa koko yleisön yhteiseksi kokemukseksi.`,
+  },
+  {
     id: 'roman',
     name: 'Roman Aliev',
     origin: 'Suomi',
