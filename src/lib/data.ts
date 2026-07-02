@@ -246,6 +246,7 @@ export const workshops: Workshop[] = [
     title: 'Liikuntaa ja hyvää fiilistä',
     titleFi: 'Liikuntaa ja hyvää fiilistä',
     facilitator: 'Valona Wellness',
+    url: 'https://valonawellness.fi/',
     image: '/workshops/valona-wellness.png',
     imageFit: 'contain',
     imageBg: 'bg-[#f6f3ef]',

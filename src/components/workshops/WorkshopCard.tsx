@@ -48,7 +48,18 @@ export default function WorkshopCard({
           compact ? 'text-sm' : 'text-base'
         }`}
       >
-        {workshop.facilitator}
+        {workshop.url ? (
+          <a
+            href={workshop.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-orange-800"
+          >
+            {workshop.facilitator}
+          </a>
+        ) : (
+          workshop.facilitator
+        )}
       </p>
 
       <p

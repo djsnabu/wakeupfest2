@@ -37,6 +37,7 @@ export interface Workshop {
   title: string
   titleFi: string
   facilitator: string
+  url?: string
   description: string
   icon: string
   image?: string
