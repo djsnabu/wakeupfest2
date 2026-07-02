@@ -241,6 +241,19 @@ export const workshops: Workshop[] = [
       'on perinteinen tamperelainen kamppailu-urheiluseura, joka on toiminut menestyksekkäästi jo yli 48 vuoden ajan.\n\nSeuran lajitarjontaan sisältyy thainyrkkeily (Muaythai), potkunyrkkeily, Krav Maga (itsepuolustus), Naisten Kuntothai ja Junnuthai.\n\nChitalada Finland on tunnettu laadukkaasta sekä monipuolisesta opetuksesta ja harjoittelusta.\n\nSeuran kilpailijat ovat voittaneet sekä amatööreissä että ammattilaisissa mm. useita maailmanmestaruuksia, Euroopan mestaruuksia, Pohjoismaiden mestaruuksia ja Suomen mestaruuksia. Lisäksi myös mm. Thaimaan stadionien mestaruuksia ja World Combat Games -kultaa.\n\nSuurin osa seuran harrastajista on mukana kuitenkin pelkästään kuntoilumielellä, ja harjoittelu sopiikin erinomaisesti kaikille ikään ja sukupuoleen katsomatta.\n\nAmmattitaitoinen opetus takaa jokaiselle harrastajalle turvallisen ja mukavan harjoittelun!\n\nLisätiedot: www.chitalada.com\n\nTyöpajaan voit osallistua ilman aiempaa taustaa kamppailulajeista!',
     icon: 'Shield',
   },
+  {
+    id: 'valona-wellness',
+    title: 'Liikuntaa ja hyvää fiilistä',
+    titleFi: 'Liikuntaa ja hyvää fiilistä',
+    facilitator: 'Valona Wellness',
+    image: '/workshops/valona-wellness.png',
+    imageFit: 'contain',
+    imageBg: 'bg-[#f6f3ef]',
+    description: `Meidän pisteellämme pääset kokeilemaan erilaisia hauskoja liikuntahaasteita yksin ja kaverin kanssa. Ei tarvitse olla ennätyskunnossa vaan tärkeintä on fiilis ja yhdessä tekeminen! Päivän aikana kerätään pisteitä, ja parhaat palkitaan illalla.
+
+Valona Wellness on tamperelainen hyvinvointibrändi, joka tarjoaa liikuntapalveluita yksilöille, ryhmille sekä tilauksesta yrityksille ja yhteisöille. Tervetuloa juttelemaan lisää ja kokeilemaan omat rajasi!`,
+    icon: 'Activity',
+  },
 ]
 
 export const partners: Partner[] = [
@@ -320,7 +333,7 @@ export const partners: Partner[] = [
     image: '/partners/spacebowling.png',
     alt: 'Space Bowling & Billiards -logo',
     url: 'https://spacebowling.fi/',
-    variant: 'dark',
+    variant: 'light',
     imageClassName: 'h-20 w-full max-w-[220px] object-contain sm:h-24',
   },
 ]
