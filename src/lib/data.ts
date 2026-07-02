@@ -305,6 +305,24 @@ export const partners: Partner[] = [
     variant: 'light',
     imageClassName: 'h-12 w-full max-w-[160px] object-contain sm:h-16',
   },
+  {
+    id: 'viihdekeskus-crazy',
+    name: 'Viihdekeskus Crazy',
+    image: '/partners/crazy.png',
+    alt: 'Viihdekeskus Crazy -logo',
+    url: 'https://www.viihdekeskuscrazy.fi/',
+    variant: 'light',
+    imageClassName: 'h-20 w-full max-w-[220px] object-contain sm:h-24',
+  },
+  {
+    id: 'spacebowling',
+    name: 'Space Bowling & Billiards',
+    image: '/partners/spacebowling.png',
+    alt: 'Space Bowling & Billiards -logo',
+    url: 'https://spacebowling.fi/',
+    variant: 'dark',
+    imageClassName: 'h-20 w-full max-w-[220px] object-contain sm:h-24',
+  },
 ]
 
 export const prohibitedItems = [

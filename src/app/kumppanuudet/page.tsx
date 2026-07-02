@@ -94,8 +94,15 @@ export default function KumppanuudetPage() {
             </div>
             <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {partners.map((partner) => {
+                const isDark = partner.variant === 'dark'
                 const card = (
-                  <div className="flex h-36 flex-col rounded-xl border border-gray-200 bg-gray-50 p-5 shadow-sm sm:h-40">
+                  <div
+                    className={`flex h-36 flex-col rounded-xl border p-5 shadow-sm sm:h-40 ${
+                      isDark
+                        ? 'border-gray-800 bg-gray-900'
+                        : 'border-gray-200 bg-gray-50'
+                    }`}
+                  >
                     <div className="flex flex-1 items-center justify-center">
                       <Image
                         src={partner.image}
@@ -109,7 +116,11 @@ export default function KumppanuudetPage() {
                       />
                     </div>
                     {partner.name ? (
-                      <p className="mt-2 shrink-0 text-center text-xs font-semibold text-gray-600">
+                      <p
+                        className={`mt-2 shrink-0 text-center text-xs font-semibold ${
+                          isDark ? 'text-gray-300' : 'text-gray-600'
+                        }`}
+                      >
                         {partner.name}
                       </p>
                     ) : null}
