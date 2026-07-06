@@ -86,10 +86,10 @@ export default function KumppanuudetPage() {
                 Mukana tukemassa
               </p>
               <h3
-                className="text-2xl font-black text-gray-900 md:text-3xl"
+                className="break-words text-2xl font-black text-gray-900 hyphens-auto md:text-3xl"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                Yhteistyökumppanit
+                Yhteistyö<wbr />kumppanit
               </h3>
             </div>
             <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
