@@ -337,6 +337,15 @@ export const partners: Partner[] = [
     variant: 'light',
     imageClassName: 'h-20 w-full max-w-[220px] object-contain sm:h-24',
   },
+  {
+    id: 'juhlatelttavuokraus',
+    name: 'Juhlatelttavuokraus.com',
+    image: '/partners/juhlatelttavuokraus.png',
+    alt: 'Juhlatelttavuokraus.com -logo',
+    url: 'https://www.juhlatelttavuokraus.com/',
+    variant: 'dark',
+    imageClassName: 'h-14 w-full max-w-[240px] object-contain sm:h-16',
+  },
 ]
 
 export const prohibitedItems = [
