@@ -6,9 +6,9 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export default function PartnerPreview() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+    <section id="yhteistyokumppanit" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-12 sm:px-6 sm:py-16">
       <AnimatedSection>
-        <div className="mb-10 text-center">
+        <div className="mb-7 text-center sm:mb-10">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-700">
             Mukana tukemassa
           </p>
@@ -21,18 +21,18 @@ export default function PartnerPreview() {
         </div>
       </AnimatedSection>
 
-      <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 items-stretch gap-2.5 sm:gap-4 lg:grid-cols-4">
         {partners.map((partner, i) => {
           const isDark = partner.variant === 'dark'
           const card = (
             <div
-              className={`flex h-36 flex-col rounded-2xl border p-5 shadow-sm sm:h-40 ${
+              className={`flex h-28 flex-col rounded-xl border p-3 shadow-sm sm:h-32 sm:rounded-2xl sm:p-4 ${
                 isDark
                   ? 'border-gray-800 bg-gray-900'
                   : 'border-gray-200 bg-gray-50'
               }`}
             >
-              <div className="flex flex-1 items-center justify-center">
+              <div className="flex min-h-0 flex-1 items-center justify-center [&_img]:!max-h-14 sm:[&_img]:!max-h-16">
                 <Image
                   src={partner.image}
                   alt={partner.alt}
@@ -40,13 +40,13 @@ export default function PartnerPreview() {
                   height={180}
                   className={
                     partner.imageClassName ??
-                    'h-16 w-full max-w-[200px] object-contain sm:h-20'
+                    'h-14 w-full max-w-[180px] object-contain sm:h-16'
                   }
                 />
               </div>
               {partner.name ? (
                 <p
-                  className={`mt-2 shrink-0 text-center text-xs font-semibold leading-tight ${
+                  className={`mt-1.5 shrink-0 text-center text-[11px] font-semibold leading-tight sm:text-xs ${
                     isDark ? 'text-gray-300' : 'text-gray-600'
                   }`}
                 >

@@ -79,9 +79,9 @@ export default function KumppanuudetPage() {
         </div>
 
         {/* Partners */}
-        <AnimatedSection delay={0.25} className="mb-16">
-          <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8">
-            <div className="mb-8 text-center">
+        <AnimatedSection delay={0.25} className="mb-16 scroll-mt-24" id="yhteistyokumppanit">
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm sm:p-8">
+            <div className="mb-6 text-center sm:mb-8">
               <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-700">
                 Mukana tukemassa
               </p>
@@ -92,18 +92,18 @@ export default function KumppanuudetPage() {
                 Yhteistyö<wbr />kumppanit
               </h3>
             </div>
-            <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 items-stretch gap-2.5 sm:gap-4 lg:grid-cols-4">
               {partners.map((partner) => {
                 const isDark = partner.variant === 'dark'
                 const card = (
                   <div
-                    className={`flex h-36 flex-col rounded-xl border p-5 shadow-sm sm:h-40 ${
+                    className={`flex h-28 flex-col rounded-xl border p-3 shadow-sm sm:h-32 sm:p-4 ${
                       isDark
                         ? 'border-gray-800 bg-gray-900'
                         : 'border-gray-200 bg-gray-50'
                     }`}
                   >
-                    <div className="flex flex-1 items-center justify-center">
+                    <div className="flex min-h-0 flex-1 items-center justify-center [&_img]:!max-h-14 sm:[&_img]:!max-h-16">
                       <Image
                         src={partner.image}
                         alt={partner.alt}
@@ -111,13 +111,13 @@ export default function KumppanuudetPage() {
                         height={180}
                         className={
                           partner.imageClassName ??
-                          'h-16 w-full max-w-[200px] object-contain sm:h-20'
+                          'h-14 w-full max-w-[180px] object-contain sm:h-16'
                         }
                       />
                     </div>
                     {partner.name ? (
                       <p
-                        className={`mt-2 shrink-0 text-center text-xs font-semibold ${
+                        className={`mt-1.5 shrink-0 text-center text-[11px] font-semibold leading-tight sm:text-xs ${
                           isDark ? 'text-gray-300' : 'text-gray-600'
                         }`}
                       >
