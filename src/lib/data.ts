@@ -346,6 +346,15 @@ export const partners: Partner[] = [
     variant: 'dark',
     imageClassName: 'h-14 w-full max-w-[240px] object-contain sm:h-16',
   },
+  {
+    id: 'suomen-rannekekauppa',
+    name: 'Suomen Rannekekauppa',
+    image: '/partners/rannekekauppa.png',
+    alt: 'Suomen Rannekekauppa -logo',
+    url: 'https://www.rannekekauppa.fi/',
+    variant: 'light',
+    imageClassName: 'h-14 w-full max-w-[220px] object-contain sm:h-16',
+  },
 ]
 
 export const prohibitedItems = [
