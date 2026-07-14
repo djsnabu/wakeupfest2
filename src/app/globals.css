@@ -91,3 +91,23 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }
+
+@keyframes partner-logo-marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.partner-logo-marquee {
+  animation: partner-logo-marquee-right 36s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-logo-marquee {
+    animation-play-state: paused;
+  }
+}
