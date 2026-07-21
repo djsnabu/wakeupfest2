@@ -255,6 +255,24 @@ export const workshops: Workshop[] = [
 Valona Wellness on tamperelainen hyvinvointibrändi, joka tarjoaa liikuntapalveluita yksilöille, ryhmille sekä tilauksesta yrityksille ja yhteisöille. Tervetuloa juttelemaan lisää ja kokeilemaan omat rajasi!`,
     icon: 'Activity',
   },
+  {
+    id: 'ensiapusi',
+    title: 'Päihdemyrkytyksen ensiapu & pop up -piste',
+    titleFi: 'Päihdemyrkytyksen ensiapu & pop up -piste',
+    facilitator: 'EnsiApusi',
+    url: 'https://www.ensiapusi.com/',
+    image: '/workshops/ensiapusi.png',
+    imageFit: 'contain',
+    imageBg: 'bg-white',
+    description: `EnsiApusi-pisteellä opit päihdemyrkytysten ensiapua käytännönläheisesti.
+
+Päivän aikana järjestetään viisi 20 minuutin minikoulutusta päihdemyrkytyksen ensiavusta ja tajuttomuudesta. Koulutukseen sisältyy lyhyt luento ja kylkiasentoon kääntämisen harjoittelua. Ennakkoilmoittautumista ei tarvita, ja mukaan mahtuu 15 osallistujaa kerrallaan.
+
+Pisteellä voit osallistua QR-koodilla tietovisaan ja arvontaan. Voittaja arvotaan klo 21.30. Lisäksi voit testata tietosi TOTTA/TARUA-pelissä klo 21 asti. Nopeimmat palkitaan festareiden selviytyjäpaketilla ja pienillä ensiapulaukuilla.
+
+Pisteeltä saat myös henkilökohtaisen alekoodin EnsiApusi-verkkokursseille.`,
+    icon: 'HeartPulse',
+  },
 ]
 
 export const partners: Partner[] = [

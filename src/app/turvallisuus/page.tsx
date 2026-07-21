@@ -96,7 +96,7 @@ export default function TurvallisuusPage() {
                 Ensiapu
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                Tapahtuma-alueelta löytyy päivystävä ensiapupiste.
+                Tapahtuma-alueella ensiapuvalmius. Defibrillaattori EnsiApusi - pop up pisteellä.
               </p>
             </div>
           </div>
