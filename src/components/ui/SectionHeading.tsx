@@ -21,7 +21,7 @@ export default function SectionHeading({
         </p>
       )}
       <h2
-        className="font-display text-4xl font-bold text-gray-900 md:text-5xl"
+        className="mx-auto max-w-4xl break-words text-balance text-3xl font-bold leading-tight text-gray-900 hyphens-auto sm:text-4xl md:text-5xl"
         style={{ fontFamily: 'var(--font-display)' }}
       >
         {title}
