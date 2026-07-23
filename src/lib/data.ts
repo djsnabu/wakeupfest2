@@ -256,6 +256,23 @@ Valona Wellness on tamperelainen hyvinvointibrändi, joka tarjoaa liikuntapalvel
     icon: 'Activity',
   },
   {
+    id: 'glitteritytot',
+    title: 'Glitterimeikit',
+    titleFi: 'Glitterimeikit',
+    facilitator: 'Glitteritytöt / Beauty Lounge Viva',
+    image: '/workshops/glitteritytot.jpeg',
+    imageFit: 'cover',
+    imagePosition: '50% 48%',
+    description: `Me ollaan Glitteritytöt, pitkän linjan kauneusalan ammattilaisia. Työskentelemme Beauty Lounge Vivassa Lahdessa.
+
+Rakastamme meikata ja ehostaa ihmisiä, minkä vuoksi meidät löytääkin kesäisin festareilta siveltimien varresta tekemästä glitterimeikkejä. ✨🩷
+
+Nähdään Tampereella Wake Up festareilla!
+
+Terkuin Eeva, Vilma ja Natalie`,
+    icon: 'Sparkles',
+  },
+  {
     id: 'ensiapusi',
     title: 'Päihdemyrkytyksen ensiapu & pop up -piste',
     titleFi: 'Päihdemyrkytyksen ensiapu & pop up -piste',
