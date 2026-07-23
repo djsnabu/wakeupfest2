@@ -41,7 +41,7 @@ export default function KumppanuudetPage() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Yhteistyökumppanuus"
-            title="Haluatko Wake Up festin yhteistyökumppaniksi?"
+            title="Haluatko WakeUpfestin kumppaniksi?"
           />
         </AnimatedSection>
 
