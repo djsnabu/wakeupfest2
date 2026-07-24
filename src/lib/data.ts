@@ -407,6 +407,15 @@ export const partners: Partner[] = [
     variant: 'light',
     imageClassName: 'h-14 w-full max-w-[220px] object-contain sm:h-16',
   },
+  {
+    id: 'kl-lampo',
+    name: 'KL-Lämpö Oy',
+    image: '/partners/kl-lampo.png',
+    alt: 'KL-Lämpö Oy -logo',
+    url: 'https://www.kl-lampo.com/',
+    variant: 'light',
+    imageClassName: 'h-14 w-full max-w-[240px] object-contain sm:h-16',
+  },
 ]
 
 export const prohibitedItems = [
