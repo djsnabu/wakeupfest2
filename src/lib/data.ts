@@ -302,6 +302,14 @@ export const partners: Partner[] = [
     variant: 'light',
   },
   {
+    id: 'sj-saumaus',
+    name: 'SJ-Saumaus Oy',
+    image: '/partners/sj-saumaus.png',
+    alt: 'SJ-Saumaus Oy -logo',
+    variant: 'dark',
+    imageClassName: 'h-14 w-full max-w-[220px] object-contain sm:h-16',
+  },
+  {
     id: 'hameenpuisto-arvokulta',
     name: 'Hämeenpuisto Arvokulta',
     image: '/partners/hameenpuisto-arvokulta.png',
