@@ -416,6 +416,14 @@ export const partners: Partner[] = [
     variant: 'light',
     imageClassName: 'h-14 w-full max-w-[240px] object-contain sm:h-16',
   },
+  {
+    id: 'berri',
+    name: 'BERRI',
+    image: '/partners/berri.png',
+    alt: 'BERRI-logo',
+    variant: 'light',
+    imageClassName: 'h-20 w-full max-w-[200px] object-contain sm:h-24',
+  },
 ]
 
 export const prohibitedItems = [
