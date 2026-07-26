@@ -52,7 +52,7 @@ export default function HeroSection() {
           >
             28.7.
           </p>
-          <p className="mt-2 text-lg font-semibold text-gray-900">tiistaina klo 15–22</p>
+          <p className="mt-2 text-lg font-semibold text-gray-900">tiistaina klo 15–23</p>
           <p className="mt-3 text-sm text-gray-600">{venue.address}</p>
         </Link>
 

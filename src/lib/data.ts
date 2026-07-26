@@ -439,7 +439,7 @@ export const faqItems: FaqItem[] = [
   {
     id: 'when-where',
     question: 'Missä ja milloin Wake Up fest järjestetään?',
-    answer: `Wake Up fest järjestetään 28.7.2026 tiistaina klo 15–22. Paikkana ${venue.address}, Tampere.`,
+    answer: `Wake Up fest järjestetään 28.7.2026 tiistaina klo 15–23. Paikkana ${venue.address}, Tampere.`,
   },
   {
     id: 'tickets',

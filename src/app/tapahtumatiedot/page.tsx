@@ -9,12 +9,12 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Tapahtumainfo – WakeUpfest 2026',
-  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput Biletin kautta. ${venue.address}, Tampere.`,
+  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–23. Maksa mitä jaksat -liput Biletin kautta. ${venue.address}, Tampere.`,
 }
 
 const infoItems = [
   { icon: Calendar, label: 'Päivämäärä', value: '28.7.2026, tiistai', color: 'text-orange-700', bg: 'bg-orange-100' },
-  { icon: Clock, label: 'Kellonaika', value: 'klo 15–22', color: 'text-yellow-700', bg: 'bg-yellow-100' },
+  { icon: Clock, label: 'Kellonaika', value: 'klo 15–23', color: 'text-yellow-700', bg: 'bg-yellow-100' },
   { icon: MapPin, label: 'Sijainti', value: venue.address, color: 'text-pink-700', bg: 'bg-pink-100' },
   { icon: Ticket, label: 'Pääsy', value: 'Ikärajaton · Maksa mitä jaksat', color: 'text-green-700', bg: 'bg-green-100' },
   { icon: Wine, label: 'Tapahtuma', value: 'Päihteetön koko päivän', color: 'text-teal-700', bg: 'bg-teal-100' },
@@ -59,7 +59,7 @@ export default function TapahtumatiedotPage() {
             >
               28.7.
             </p>
-            <p className="mt-2 text-2xl font-semibold text-gray-900">tiistaina klo 15–22</p>
+            <p className="mt-2 text-2xl font-semibold text-gray-900">tiistaina klo 15–23</p>
             <p className="mt-4 text-base text-gray-600">{venue.address}</p>
           </div>
         </AnimatedSection>

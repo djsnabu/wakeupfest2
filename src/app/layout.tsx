@@ -22,10 +22,10 @@ const syne = Syne({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'WakeUpfest 2026',
-  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–22. Maksa mitä jaksat -liput. ${venue.address}, Tampere.`,
+  description: `Ikärajaton ja päihteetön festivaali 28.7.2026 klo 15–23. Maksa mitä jaksat -liput. ${venue.address}, Tampere.`,
   openGraph: {
     title: 'WakeUpfest 2026',
-    description: `28.7.2026 klo 15–22 · ${venue.name}, Tampere. Hyväntekeväisyystapahtuma — seuraa @wakeupfest_finland.`,
+    description: `28.7.2026 klo 15–23 · ${venue.name}, Tampere. Hyväntekeväisyystapahtuma — seuraa @wakeupfest_finland.`,
     url: siteUrl,
     siteName: 'WakeUpfest',
     locale: 'fi_FI',
