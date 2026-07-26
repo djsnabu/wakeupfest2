@@ -424,6 +424,15 @@ export const partners: Partner[] = [
     variant: 'light',
     imageClassName: 'h-20 w-full max-w-[200px] object-contain sm:h-24',
   },
+  {
+    id: 'pyynikin-munkkikahvila',
+    name: 'Pyynikin Munkkikahvila',
+    image: '/partners/pyynikin-munkkikahvila.png',
+    alt: 'Pyynikin Munkkikahvila -logo',
+    url: 'https://www.munkkikahvila.net/',
+    variant: 'light',
+    imageClassName: 'h-20 w-full max-w-[200px] object-contain sm:h-24',
+  },
 ]
 
 export const prohibitedItems = [
