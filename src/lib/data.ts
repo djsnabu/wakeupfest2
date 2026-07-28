@@ -290,6 +290,32 @@ Pisteellä voit osallistua QR-koodilla tietovisaan ja arvontaan. Voittaja arvota
 Pisteeltä saat myös henkilökohtaisen alekoodin EnsiApusi-verkkokursseille.`,
     icon: 'HeartPulse',
   },
+  {
+    id: 'cimax-afro-finn',
+    title: 'Festariletitykset & korut',
+    titleFi: 'Festariletitykset & korut',
+    facilitator: 'Cimax Design / AFRO-FINN Salon',
+    image: '/workshops/cimax-afro-finn.jpg',
+    imageFit: 'cover',
+    imagePosition: '50% 42%',
+    description: `Cimax Design toteuttaa yhteistyössä AFRO-FINN Salonin kanssa uniikkeja festariletityksiä trendikkäiden korujen lisäksi. ✨😎
+
+Voit tulla pisteelle ilman ajanvarausta tai varata letitysajan etukäteen soittamalla tai lähettämällä viestin numeroon +358 46 621 0866. 💫`,
+    icon: 'Sparkles',
+  },
+  {
+    id: 'neurohyve',
+    title: 'Neuroystävällinen hengähdyspaikka',
+    titleFi: 'Neuroystävällinen hengähdyspaikka',
+    facilitator: 'Neurohyve',
+    image: '/workshops/neurohyve.png',
+    imageFit: 'contain',
+    imageBg: 'bg-[#f4f0e8]',
+    description: `Onko festarihulinaa hetken liikaa? Neurohyven hengähdyspaikka on maksuton ja neuroystävällinen tila, jossa saat olla juuri sellainen kuin olet. Paikalle ei tarvitse ilmoittautua eikä siellä tarvitse jutella.
+
+Voit ottaa mukaasi voimautumiskortin tai istahtaa kuulonsuojaimet päässä pienelle tauolle. Pisteellä pääset myös osallistumaan maksuttomaan arvontaan.`,
+    icon: 'Heart',
+  },
 ]
 
 export const partners: Partner[] = [
@@ -432,6 +458,14 @@ export const partners: Partner[] = [
     url: 'https://www.munkkikahvila.net/',
     variant: 'light',
     imageClassName: 'h-20 w-full max-w-[200px] object-contain sm:h-24',
+  },
+  {
+    id: 'pirkanmaan-esitystekniikka',
+    name: 'Pirkanmaan Esitystekniikka Oy',
+    image: '/partners/pirkanmaan-esitystekniikka.png',
+    alt: 'Pirkanmaan Esitystekniikka Oy -logo',
+    variant: 'light',
+    imageClassName: 'h-14 w-full max-w-[260px] object-contain sm:h-16',
   },
 ]
 
