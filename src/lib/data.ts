@@ -332,7 +332,7 @@ export const partners: Partner[] = [
     name: 'SJ-Saumaus Oy',
     image: '/partners/sj-saumaus.png',
     alt: 'SJ-Saumaus Oy -logo',
-    variant: 'dark',
+    variant: 'light',
     imageClassName: 'h-14 w-full max-w-[220px] object-contain sm:h-16',
   },
   {
@@ -421,7 +421,7 @@ export const partners: Partner[] = [
     image: '/partners/juhlatelttavuokraus.png',
     alt: 'Juhlatelttavuokraus.com -logo',
     url: 'https://www.juhlatelttavuokraus.com/',
-    variant: 'dark',
+    variant: 'light',
     imageClassName: 'h-14 w-full max-w-[240px] object-contain sm:h-16',
   },
   {
@@ -466,6 +466,14 @@ export const partners: Partner[] = [
     alt: 'Pirkanmaan Esitystekniikka Oy -logo',
     variant: 'light',
     imageClassName: 'h-14 w-full max-w-[260px] object-contain sm:h-16',
+  },
+  {
+    id: 'hav',
+    name: 'hav.',
+    image: '/partners/hav.png',
+    alt: 'hav.-logo',
+    variant: 'light',
+    imageClassName: 'h-14 w-full max-w-[220px] object-contain sm:h-16',
   },
 ]
 
